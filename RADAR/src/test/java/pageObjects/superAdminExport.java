@@ -1,0 +1,109 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+
+public class superAdminExport extends BasePage {
+    public superAdminExport(WebDriver driver) {
+        super(driver);
+    }
+
+    @FindBy(xpath = "//input[@name='username']")
+    WebElement userName;
+    @FindBy(xpath = "//input[@name='password']")
+    WebElement password;
+    @FindBy(xpath = "//button[normalize-space()='Sign In']")
+    WebElement ClickOnsignUp;
+    @FindBy(xpath = "//button[normalize-space()='Generate OTP']")
+    WebElement generateOtp;
+    @FindBy(xpath = "//input[@name='otp']")
+    WebElement otp;
+    @FindBy(xpath = "//button[normalize-space()='Verify OTP']")
+    WebElement verifyOTP;
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]/i[1]")
+    WebElement pwdPopUpcancelClick;
+    @FindBy(xpath = "//span[normalize-space()='My Files']")
+    WebElement clickAllFiles;
+    @FindBy(xpath = "//span[normalize-space()='Raw Data']")
+    WebElement clickOnRawData;
+    @FindBy(xpath = "//select[@name='rowsPerPage']")
+    WebElement selectRowsPerPage;
+    @FindBy(xpath = "//div[@role='columnheader']//input[@type='checkbox']")
+    WebElement selectheaderCheckbox;
+    @FindBy(xpath = "//a[contains(@class,'dropdown-toggle') and contains(.,'Export')]")
+    WebElement exportButton;
+    @FindBy(xpath = "//a[@class='dropdown-item rounded-1' and contains(normalize-space(), 'Export as Excel')]")
+    WebElement exportAsExcelOption;
+
+    public void setUserName(String username) {
+        userName.sendKeys(username);
+    }
+
+    public void setPassword(String Password) {
+        password.sendKeys(Password);
+    }
+
+    public void setClickOnsignUp() {
+        ClickOnsignUp.click();
+    }
+
+    public void otpGenerate() {
+        generateOtp.click();
+    }
+
+    public void otpinput(String otpNo) {
+        otp.sendKeys(otpNo);
+    }
+
+    public void VerifyOtp() {
+        verifyOTP.click();
+    }
+
+    public void passwordPopUpcancelClick() {
+        pwdPopUpcancelClick.click();
+    }
+
+    public void clickAllFiles() {
+        clickAllFiles.click();
+    }
+
+    public void clickOnRawData() {
+        clickOnRawData.click();
+    }
+
+    public void setSelectRowsPerPage() {
+        Select select = new Select(selectRowsPerPage);
+        select.selectByVisibleText("100");
+
+        // Wait until the table updates and 100 rows are visible
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        try {
+            wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(
+                    By.xpath("//table//tbody/tr"), 10));  // change threshold as per need
+        } catch (TimeoutException e) {
+            System.out.println("Table did not load expected number of rows in time.");
+        }
+    }
+
+    public void headerCheckbox() {
+        selectheaderCheckbox.click();
+    }
+
+    public void exportClick() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement exportBtn = wait.until(ExpectedConditions.elementToBeClickable(exportButton));
+        exportBtn.click();
+        WebElement exportExcel = wait.until(ExpectedConditions.elementToBeClickable(exportAsExcelOption));
+        exportExcel.click();
+
+
+    }
+}
