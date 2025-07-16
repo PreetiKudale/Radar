@@ -1,0 +1,60 @@
+11:14:57.536 [main] INFO  allWebsites.ofelostrade.openUrl(ofelostrade.java:20)oggger - Validate ofelostrade
+11:15:02.059 [main] INFO  allWebsites.ofelostrade.validateTeamLink(ofelostrade.java:27)oggger - Validate Team ofelostrade
+11:15:04.606 [main] INFO  allWebsites.ofelostrade.validateCertificate(ofelostrade.java:35)oggger - Validate Certificate ofelostrade
+11:15:07.439 [main] INFO  allWebsites.ofelostrade.validateContactUs(ofelostrade.java:43)oggger - Validate Contact us ofelostrade
+11:15:13.833 [main] INFO  allWebsites.ofelostrade.brokenLink(ofelostrade.java:77)oggger - Validate Broken Links ofelostrade
+11:15:30.332 [main] INFO  allWebsites.eliteVibes.openUrl(eliteVibes.java:20)oggger - Validate Elite Vibes
+11:15:40.644 [main] INFO  allWebsites.sunriseFoundation.brokenLink(sunriseFoundation.java:109)oggger - Validate Broken Links sunrise Foundation
+11:16:10.702 [main] INFO  allWebsites.sunriseFoundation.contactUs(sunriseFoundation.java:62)oggger - Validate Contact Us sunrise Foundation
+11:16:16.042 [main] INFO  allWebsites.sunriseFoundation.donatePage(sunriseFoundation.java:138)oggger - Validate Donate Page sunrise Foundation
+11:16:51.589 [main] INFO  allWebsites.sunriseFoundation.emailboxatPageDown(sunriseFoundation.java:204)oggger - Validate email Box Page sunrise Foundation
+11:16:52.637 [main] INFO  allWebsites.sunriseFoundation.openSunriseUrl(sunriseFoundation.java:22)oggger - Validate sunrise Foundation
+11:16:54.404 [main] INFO  allWebsites.sunriseFoundation.valiateAboutUs(sunriseFoundation.java:84)oggger - Validate About us sunrise Foundation
+11:17:08.681 [main] INFO  allWebsites.sunriseFoundation.validateEducation(sunriseFoundation.java:56)oggger - Validate Education sunrise Foundation
+11:17:08.754 [main] INFO  allWebsites.sunriseFoundation.validateGallery(sunriseFoundation.java:50)oggger - Validate Gallery sunrise Foundation
+11:17:08.797 [main] INFO  allWebsites.sunriseFoundation.validateHomeLink(sunriseFoundation.java:38)oggger - Validate Home Link sunrise Foundation
+11:17:08.846 [main] INFO  allWebsites.sunriseFoundation.validatecertificate(sunriseFoundation.java:44)oggger - Validate Certificate sunrise Foundation
+11:17:08.901 [main] INFO  allWebsites.sunriseFoundation.validatePageTitle(sunriseFoundation.java:27)oggger - Validate Home Page sunrise Foundation
+11:17:10.447 [main] INFO  allWebsites.botmaticSolutionCom.validateMenuItemsAreClickable(botmaticSolutionCom.java:21)oggger - Validate botmatic Solution Com
+11:17:12.695 [main] INFO  allWebsites.botmaticSolutionCom.homeLinkValidation(botmaticSolutionCom.java:34)oggger - Validate Home link in botmatic Solution Com
+11:17:12.764 [main] INFO  allWebsites.botmaticSolutionCom.AboutUsLinkValidate(botmaticSolutionCom.java:42)oggger - Validate About Us Link in botmatic Solution Com
+11:17:12.824 [main] INFO  allWebsites.botmaticSolutionCom.rpaUseCasesLinkValidation(botmaticSolutionCom.java:49)oggger - Validate rpa Use Cases Link botmatic Solution Com
+11:17:12.881 [main] INFO  allWebsites.botmaticSolutionCom.contactUsLinkValidation(botmaticSolutionCom.java:56)oggger - Validate Contact Us link botmatic Solution Com
+11:17:13.694 [main] INFO  allWebsites.botmaticSolutionCom.validateProductOpensInNewTab(botmaticSolutionCom.java:72)oggger - Validate Product Opens in botmatic Solution Com
+11:17:18.404 [main] INFO  allWebsites.botmaticSolutionCom.brokenLink(botmaticSolutionCom.java:98)oggger - Validate Broken Link botmatic Solution Com
+11:17:39.353 [main] INFO  allWebsites.botmaticSolutions.botmaticsolutionsInOpen(botmaticSolutions.java:16)oggger - Validate botmatic Solutions In
+11:17:41.524 [main] INFO  allWebsites.botmaticSolutions.aboutUsValidate(botmaticSolutions.java:29)oggger - Validate About Us in botmatic Solutions In
+11:17:41.583 [main] INFO  allWebsites.botmaticSolutions.RPAUsecasesValidate(botmaticSolutions.java:37)oggger - Validate RPA Use Cases in botmatic Solutions In
+11:17:41.665 [main] INFO  allWebsites.botmaticSolutions.brokenLink(botmaticSolutions.java:103)oggger - Validate Broken Links in botmatic Solutions In
+11:17:56.557 [main] INFO  allWebsites.botmaticSolutions.careersValidation(botmaticSolutions.java:44)oggger - Validate Careers alidation in botmatic Solutions In
+11:17:56.601 [main] INFO  allWebsites.botmaticSolutions.validateProductsLinkInNewTab(botmaticSolutions.java:50)oggger - Validate Product Link botmatic Solutions In
+11:18:01.493 [main] INFO  allWebsites.botmaticSolutions.contactUsValidate(botmaticSolutions.java:74)oggger - Validate Contact Us botmatic Solutions In
+11:18:03.883 [main] INFO  allWebsites.caJpd.navigateAndValidatePages(caJpd.java:19)oggger - Validate CAJPD
+11:18:05.193 [main] INFO  allWebsites.caJpd.aboutLinkvalidate(caJpd.java:26)oggger - Validate About Us Link CAJPD
+11:18:05.258 [main] INFO  allWebsites.caJpd.services(caJpd.java:32)oggger - Validate Services page CAJPD
+11:18:05.331 [main] INFO  allWebsites.caJpd.knowledge(caJpd.java:38)oggger - Validate Knowlede Page CAJPD
+11:18:05.395 [main] INFO  allWebsites.caJpd.clickAndValidateSocialMedia(caJpd.java:62)oggger - Validate Social Media Pages CAJPD
+11:18:24.822 [main] INFO  allWebsites.caJpd.fillContactForm(caJpd.java:45)oggger - Validate fill Contact page CAJPD
+11:18:48.209 [main] INFO  allWebsites.caJpd.brokenLink(caJpd.java:105)oggger - Validate Broken Link CAJPD
+11:18:54.452 [main] INFO  allWebsites.claimMyShares.openHomePageAndValidateTitle(claimMyShares.java:20)oggger - Validate claim My SharesHome Page
+11:19:25.507 [main] INFO  allWebsites.claimMyShares.validateHomeLinkClickable(claimMyShares.java:34)oggger - Validate home link claim My Shares
+11:19:25.537 [main] INFO  allWebsites.claimMyShares.validateAboutUsLinkClickable(claimMyShares.java:41)oggger - Validate About Us in claim My Shares
+11:19:28.558 [main] INFO  allWebsites.claimMyShares.validateFAQLinkClickable(claimMyShares.java:50)oggger - Validate FAQ Link claim My Shares
+11:19:28.565 [main] INFO  allWebsites.claimMyShares.fillContactForm(claimMyShares.java:88)oggger - Validate Contact Form claim My Shares
+11:19:28.572 [main] INFO  allWebsites.claimMyShares.brokenLink(claimMyShares.java:117)oggger - Validate Broken Link claim My Shares
+11:19:29.944 [main] INFO  allWebsites.eliteTravelDesk.openLoginAndSignUpWithEmail(eliteTravelDesk.java:18)oggger - Validate Elite Travel Desk
+11:19:34.304 [main] INFO  allWebsites.eliteTravelDesk.flexPopUp(eliteTravelDesk.java:32)oggger - Validate Flex Pop Up Elite Travel Desk
+11:19:34.473 [main] INFO  allWebsites.eliteTravelDesk.validateflight(eliteTravelDesk.java:43)oggger - Validate Flight, Elite Travel Desk
+11:19:34.798 [main] INFO  allWebsites.eliteTravelDesk.hotelLinkValidate(eliteTravelDesk.java:83)oggger - Validate Hotel Link Elite Travel Desk
+11:20:07.463 [main] INFO  allWebsites.eliteTravelDesk.planaTrip(eliteTravelDesk.java:120)oggger - Validate Plan A Trip Elite Travel Desk
+11:20:41.112 [main] INFO  allWebsites.eliteTravelDesk.intercityCabs(eliteTravelDesk.java:165)oggger - Validate Intercity Cab link Elite Travel Desk
+11:21:12.163 [main] INFO  allWebsites.eliteTravelDesk.activityLinkValidation(eliteTravelDesk.java:241)oggger - Validate Activity Link Elite Travel Desk
+11:21:24.758 [main] INFO  allWebsites.eliteTravelDesk.transfersLinkValidation(eliteTravelDesk.java:257)oggger - Validate Transfers Link Elite Travel Desk
+11:21:25.097 [main] INFO  allWebsites.eliteTravelDesk.organizedPackage(eliteTravelDesk.java:265)oggger - Validate Organized Package Elite Travel Desk
+11:21:27.945 [main] INFO  allWebsites.myVyayCom.validateDashboardMenusAndContactForm(myVyayCom.java:18)oggger - Validate myVyayCom
+11:21:31.793 [main] INFO  allWebsites.myVyayCom.validateProductLinks(myVyayCom.java:41)oggger - Validate Product Link
+11:21:31.976 [main] INFO  allWebsites.myVyayCom.validateServicesClickable(myVyayCom.java:56)oggger - Validate Service Link myVyayCom
+11:21:32.786 [main] INFO  allWebsites.myVyayCom.validateResourcesLinks(myVyayCom.java:65)oggger - Validate Resource link myVyayCom
+11:22:03.004 [main] INFO  allWebsites.myVyayCom.validateAboutUsClickable(myVyayCom.java:80)oggger - Validate About Us myVyayCom
+11:22:04.656 [main] INFO  allWebsites.myVyayCom.fillContactFormAndValidate(myVyayCom.java:88)oggger - Validate Contact form myVyayCom
+17:03:06.008 [main] INFO  testCases.TC_001_LoginPage.verify_Account(TC_001_LoginPage.java:16)oggger - Login to vyay.live Application
