@@ -9,25 +9,21 @@
     <Appenders>
         <!-- Console Appender -->
         <Console name="Console" target="SYSTEM_OUT">
-
-            <PatternLayout pattern ="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
 
-        <!-- Rolling File Appender using properties -->
-        <RollingFile name="File" fileName="${basePath}/allWebsites.log"
-                     filePattern="${basePath}/allWebsites-%d{yyyy-MM-dd}.log">
+        <!-- Rolling File Appender -->
+        <RollingFile name="File" fileName="${basePath}/RadarAutomation.log"
+                     filePattern="${basePath}/RadarAutomation-%d{yyyy-MM-dd}.log">
             <PatternLayout Pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
             <SizeBasedTriggeringPolicy size="10MB"/>
         </RollingFile>
 
-
     </Appenders>
 
     <Loggers>
-        <!-- Root logger references the console and rolling appenders
-        If devolper ask we can change root level to debug-->
+        <!-- Root logger references the rolling appender -->
         <Root level="Info">
-            <!--<AppenderRef ref="Console"/> -->
             <AppenderRef ref="File"/>
         </Root>
     </Loggers>
