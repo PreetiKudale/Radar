@@ -93,7 +93,7 @@ for(WebElement selectdate:alldates){
                 WebElement plusclick = driver.findElement(By.xpath("//button[normalize-space()='+']"));
                 plusclick.click();
                 ((JavascriptExecutor) driver).executeScript("document.body.style.zoom='70%'");
-                WebElement apply = driver.findElement(By.xpath("//button[@class='btn-sm btn-primary searchBtn px-3 main-color-bg font16 py-1']"));
+                WebElement apply = driver.findElement(By.xpath("//button[normalize-space()='Apply']"));
                 apply.click();
                 WebElement budget = driver.findElement(By.xpath("//input[@name='budget'] "));//p[contains(text(),'₹')]
                 budget.clear();
@@ -130,7 +130,7 @@ for(WebElement selectdate:alldates){
                 noOfTravellers.click();
                 WebElement clickOnPlus = driver.findElement(By.xpath("//button[normalize-space()='+']"));
                 clickOnPlus.click();
-                WebElement apply = driver.findElement(By.xpath("//button[@class='btn-sm btn-primary searchBtn px-3 main-color-bg font16 py-1']"));
+                WebElement apply = driver.findElement(By.xpath("//button[normalize-space()='Apply']"));
                 apply.click();
                 Thread.sleep(5000);
                 WebElement input = driver.findElement(By.xpath("//input[@placeholder='Enter Origin'][@id='search_input_origin']"));
@@ -139,7 +139,7 @@ for(WebElement selectdate:alldates){
                 WebElement suggestion = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//p[@class='type-selector destination-name mb-0']")));
                 suggestion.click();
                 Thread.sleep(5000);
-                WebElement nextButton = driver.findElement(By.xpath("//button[@class='nextBtn main-color-bg'][normalize-space()='Next']"));
+                WebElement nextButton = driver.findElement(By.xpath("//button[normalize-space()='Next']"));
                 nextButton.click();
                 WebElement roadTripClick = driver.findElement(By.xpath("//div[normalize-space()='On a Road Trip']"));
                 roadTripClick.click();
@@ -150,7 +150,7 @@ for(WebElement selectdate:alldates){
 
                 WebElement range = driver.findElement(By.xpath("//input[@id='mat-input-2']"));
                 range.sendKeys("10000");
-                WebElement addTrip = driver.findElement(By.xpath("//button[@class='addToTripBtn main-color-bg']"));
+                WebElement addTrip = driver.findElement(By.xpath("//button[normalize-space()='Add to trip']"));
                 addTrip.click();
                 WebElement createpackage = driver.findElement(By.xpath("//button[@class='createPkgBtn main-color-bg']"));
                 createpackage.click();

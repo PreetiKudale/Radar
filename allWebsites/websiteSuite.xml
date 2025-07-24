@@ -5,8 +5,8 @@
         <parameter name="os" value="Windows"/>
         <parameter name="Browser" value="chrome"/>
         <classes>
-
-           <class name ="allWebsites.ofelostrade"/>
+            <class name ="allWebsites.eliteTravelDesk"/>
+           <!--<class name ="allWebsites.ofelostrade"/>
               <class name ="allWebsites.eliteVibes"/>
            <class name ="allWebsites.sunriseFoundation"/>
               <class name ="allWebsites.botmaticSolutionCom"/>
@@ -14,7 +14,7 @@
                 <class name ="allWebsites.caJpd"/>
                <class name ="allWebsites.claimMyShares"/>
              <class name ="allWebsites.eliteTravelDesk"/>
-              <class name ="allWebsites.myVyayCom"/>
+              <class name ="allWebsites.myVyayCom"/>-->
 
          </classes>
      </test>
