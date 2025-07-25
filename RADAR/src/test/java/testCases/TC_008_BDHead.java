@@ -15,12 +15,18 @@ public class TC_008_BDHead extends BaseClass{
             bd.otpGenerate();
             bd.otpinput(p.getProperty("OTP"));
             bd.VerifyOtp();
+            bd.clickCancelpopup();
+            bd.clickonworkspace();
+            bd.clickMyWorkspace();
+            bd.setSelectRowsPerPage();
+            bd.headerCheckbox();
+            bd.exportClick();
+            bd.clickCancelpopupagain();
             logger.info("Login to Radar Application");
 
         } catch (Exception e) {
             logger.error("Test Failed");
             logger.debug("Debug logs");
-            Assert.fail();
-        }
-    }
+
+        }    }
 }

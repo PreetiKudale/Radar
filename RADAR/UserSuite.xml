@@ -5,13 +5,14 @@
         <parameter name="os" value="Windows"/>
         <parameter name="Browser" value="chrome"/>
         <classes>
-            <!--<class name ="pageObjects.robotVPN"/>-->
+           <!-- <class name ="pageObjects.robotVPN"/>-->
             <class name="testCases.TC_011_DVUser"/>
-           <!-- <class name="testCases.TC_012_DCUser"/>
+            <!--<class name="testCases.TC_012_DCUser"/>
             <class name="testCases.TC_013_RtaUser"/>
             <class name="testCases.TC_014_CommsUser"/>
-            <class name="testCases.TC_015_bdUser"/>
-            <class name="testCases.TC_016_OpsUser"/>-->
+            <class name="testCases.TC_015_bdUser"/>-->
+
+            <class name="testCases.TC_016_OpsUser"/>
         </classes>
     </test>
 

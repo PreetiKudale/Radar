@@ -1,8 +1,8 @@
 package pageObjects;
 import org.testng.annotations.BeforeSuite;
-
-import java.awt.Robot;
+import java.awt.*;
 import java.awt.event.KeyEvent;
+
 
 public class robotVPN {
     @BeforeSuite
@@ -27,6 +27,8 @@ public class robotVPN {
             // Press ENTER to connect
             robot.keyPress(KeyEvent.VK_ENTER);
             robot.keyRelease(KeyEvent.VK_ENTER);
+
+            Thread.sleep(5000);
 
         } catch (Exception e) {
             e.printStackTrace();

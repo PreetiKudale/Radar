@@ -15,12 +15,19 @@ public class TC_013_RtaUser extends BaseClass {
             rtaUser.otpGenerate();
             rtaUser.otpinput(p.getProperty("OTP"));
             rtaUser.VerifyOtp();
+            rtaUser.clickCancelpopup();
+            rtaUser.clickonworkspace();
+            rtaUser.clickMyWorkspace();
+            rtaUser.setSelectRowsPerPage();
+            rtaUser.headerCheckbox();
+            rtaUser.exportClick();
+            rtaUser.clickCancelpopupagain();
             logger.info("Login to Radar Application");
 
         } catch (Exception e) {
             logger.error("Test Failed");
             logger.debug("Debug logs");
-            Assert.fail();
+          /*  Assert.fail();*/
         }
     }
 

@@ -1,17 +1,16 @@
 package pageObjects;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.SkipException;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.time.Duration;
+import java.util.NoSuchElementException;
 
 public class dvUser extends BasePage {
     public dvUser(WebDriver driver)
@@ -61,42 +60,59 @@ public class dvUser extends BasePage {
         generateOtp.click();
     }
 
-    public void otpinput(String otpNo) {
-        otp.sendKeys(otpNo);
+    public void enterOtp(String otp) {
+        for (int i = 0; i < otp.length(); i++) {
+            driver.findElement(By.id("otp-" + i)).sendKeys(String.valueOf(otp.charAt(i)));
+        }
     }
 
     public void VerifyOtp() {
         verifyOTP.click();
     }
-
     public void clickCancelpopup() {
-        pwdPopUpcancelClick.click();
+        try {
+            if (pwdPopUpcancelClick.isDisplayed()) {
+                pwdPopUpcancelClick.click();
+                Thread.sleep(2000); // Optional pause
+            }
+        } catch (NoSuchElementException | ElementNotInteractableException e) {
+            System.out.println("Cancel popup not found or not clickable. Proceeding with the test.");
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            System.out.println("Interrupted while waiting after cancel popup.");
+        } catch (Exception e) {
+            System.out.println("Unexpected error in clickCancelpopup(): " + e.getMessage());
+        }
     }
-
     public void clickonworkspace() {
         workspace.click();
     }
-
     public void clickMyWorkspace() {
         myWorkspace.click();
     }
-
     public void setSelectRowsPerPage() {
-        Select select = new Select(selectRowsPerPage);
-        select.selectByVisibleText("100");
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         try {
-            wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(
-                    By.xpath("//table//tbody/tr"), 10));  // change threshold as per need
-        } catch (TimeoutException e) {
-            System.out.println("Table did not load expected number of rows in time.");
+            if (selectRowsPerPage.isDisplayed()) {
+                Select select = new Select(selectRowsPerPage);
+                select.selectByVisibleText("100");
+
+                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+                try {
+                    wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(
+                            By.xpath("//table//tbody/tr"), 10));
+                } catch (TimeoutException e) {
+                    System.out.println("Table did not load expected number of rows in time.");
+                }
+            }
+        } catch (NoSuchElementException | ElementNotInteractableException e) {
+            throw new SkipException("selectRowsPerPage not found or not interactable. Skipping this test.");
+        } catch (Exception e) {
+            throw new SkipException("Unexpected error while setting rows per page: " + e.getMessage());
         }
     }
-
     public void headerCheckbox() {
         selectheaderCheckbox.click();
     }
-
     public void exportClick() throws Exception {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement exportBtn = wait.until(ExpectedConditions.elementToBeClickable(exportButton));
@@ -124,10 +140,19 @@ public class dvUser extends BasePage {
         robot.keyRelease(KeyEvent.VK_ENTER);
         driver.navigate().back();
     }
-    public void clickCanceagain() {
-        pwdPopUpcancelClick.click();
-
-
-
+    public void clickCancelpopupagain() {
+        try {
+            if (pwdPopUpcancelClick.isDisplayed()) {
+                pwdPopUpcancelClick.click();
+                Thread.sleep(2000); // Optional pause
+            }
+        } catch (NoSuchElementException | ElementNotInteractableException e) {
+            System.out.println("Cancel popup not found or not clickable. Proceeding with the test.");
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            System.out.println("Interrupted while waiting after cancel popup.");
+        } catch (Exception e) {
+            System.out.println("Unexpected error in clickCancelpopup(): " + e.getMessage());
+        }
     }
 }

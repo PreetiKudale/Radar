@@ -1,6 +1,7 @@
 package testCases;
 
 import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.Test;
 import pageObjects.RTAHead;
 
@@ -15,12 +16,21 @@ public class TC_004_RTAHead extends BaseClass{
             rta.otpGenerate();
             rta.otpinput(p.getProperty("OTP"));
             rta.VerifyOtp();
+            rta.clickCancelpopup();
+            rta.clickonworkspace();
+            rta.clickMyWorkspace();
+            rta.setSelectRowsPerPage();
+            rta.headerCheckbox();
+            rta.exportClick();
+            rta.clickCancelpopupagain();
             logger.info("Login to Radar Application");
 
+        } catch (SkipException se) {
+            logger.warn("Test Skipped: " + se.getMessage());
+            throw se; // Let TestNG handle skip
         } catch (Exception e) {
-            logger.error("Test Failed");
-            logger.debug("Debug logs");
-            Assert.fail();
+            logger.error("Test Failed", e);
+            Assert.fail("Test failed due to: " + e.getMessage());
         }
     }
 }

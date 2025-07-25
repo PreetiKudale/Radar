@@ -13,7 +13,7 @@ public class TC_011_DVUser extends BaseClass {
             dvUser.setPassword(p.getProperty("Password"));
             dvUser.setClickOnsignUp();
             dvUser.otpGenerate();
-            dvUser.otpinput(p.getProperty("OTP"));
+            dvUser.enterOtp(p.getProperty("OTP"));
             dvUser.VerifyOtp();
             dvUser.clickCancelpopup();
             dvUser.clickonworkspace();
@@ -21,7 +21,7 @@ public class TC_011_DVUser extends BaseClass {
             dvUser.setSelectRowsPerPage();
             dvUser.headerCheckbox();
             dvUser.exportClick();
-            dvUser.clickCanceagain();
+            dvUser.clickCancelpopupagain();
             logger.info("Login to Radar Application");
 
         } catch (Exception e) {

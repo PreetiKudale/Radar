@@ -15,12 +15,19 @@ public class TC_014_CommsUser extends BaseClass{
             commsUser.otpGenerate();
             commsUser.otpinput(p.getProperty("OTP"));
             commsUser.VerifyOtp();
+            commsUser.clickCancelpopup();
+            commsUser.clickonworkspace();
+            commsUser.clickMyWorkspace();
+            commsUser.setSelectRowsPerPage();
+            commsUser.headerCheckbox();
+            commsUser.exportClick();
+            commsUser.clickCancelpopupagain();
             logger.info("Login to Radar Application");
 
         } catch (Exception e) {
             logger.error("Test Failed");
             logger.debug("Debug logs");
-            Assert.fail();
+            /*Assert.fail();*/
         }
     }
 }

@@ -15,6 +15,13 @@ public class TC_012_DCUser extends BaseClass{
             dcUser.otpGenerate();
             dcUser.otpinput(p.getProperty("OTP"));
             dcUser.VerifyOtp();
+            dcUser.clickCancelpopup();
+            dcUser.clickonworkspace();
+            dcUser.clickMyWorkspace();
+            dcUser.setSelectRowsPerPage();
+            dcUser.headerCheckbox();
+            dcUser.exportClick();
+            dcUser.clickCancelpopupagain();
             logger.info("Login to Radar Application");
 
         } catch (Exception e) {

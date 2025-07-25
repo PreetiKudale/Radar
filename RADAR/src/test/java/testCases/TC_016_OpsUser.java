@@ -15,6 +15,13 @@ public class TC_016_OpsUser extends BaseClass{
             opsUser.otpGenerate();
             opsUser.otpinput(p.getProperty("OTP"));
             opsUser.VerifyOtp();
+            opsUser.clickCancelpopup();
+            opsUser.clickonworkspace();
+            opsUser.clickMyWorkspace();
+            opsUser.setSelectRowsPerPage();
+            opsUser.headerCheckbox();
+            opsUser.exportClick();
+            opsUser.clickCancelpopupagain();
             logger.info("Login to Radar Application");
 
         } catch (Exception e) {

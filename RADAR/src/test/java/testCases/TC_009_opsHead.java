@@ -15,6 +15,13 @@ public class TC_009_opsHead extends BaseClass{
             ops.otpGenerate();
             ops.otpinput(p.getProperty("OTP"));
             ops.VerifyOtp();
+            ops.clickCancelpopup();
+            ops.clickonworkspace();
+            ops.clickMyWorkspace();
+            ops.setSelectRowsPerPage();
+            ops.headerCheckbox();
+            ops.exportClick();
+            ops.clickCancelpopupagain();
             logger.info("Login to Radar Application");
 
         } catch (Exception e) {

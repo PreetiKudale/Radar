@@ -5,20 +5,20 @@
         <parameter name="os" value="Windows"/>
         <parameter name="Browser" value="chrome"/>
         <classes>
-
-          <!--  <class name ="pageObjects.robotVPN"/>-->
-         <!--<class name="testCases.TC_001_superAdminExportOption"/>-->
-            <!--<class name="testCases.TC_020_superAdminRawData"/>-->
+            <!--<class name ="pageObjects.robotVPN"/>-->
+            <class name="testCases.TC_003_adminPage"/>
+       <!--  <class name="testCases.TC_001_superAdminExportOption"/>
+            <class name="testCases.TC_020_superAdminRawData"/>
             <class name="testCases.TC_002_dataValidationHead"/>
-       <!--<class name="testCases.TC_003_adminPage"/>
+           <class name="testCases.TC_003_adminPage"/>
             <class name="testCases.TC_004_RTAHead"/>
           <class name="testCases.TC_005_dataCleaningHead"/>
            <class name="testCases.TC_006_commsHead"/>
           <class name="testCases.TC_007_Inbound"/>
           <class name="testCases.TC_008_BDHead"/>
             <class name="testCases.TC_009_opsHead"/>
-            <class name="testCases.TC_010_collectionHead"/>-->
-            <!--<class name="testCases.TC_021_openLatestFile"/>-->
+            <class name="testCases.TC_010_collectionHead"/>
+            <class name="testCases.TC_021_latestFileEdit"/>-->
         </classes>
     </test>
 

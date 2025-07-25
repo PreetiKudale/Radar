@@ -13,8 +13,15 @@ public class TC_003_adminPage extends BaseClass{
             ad.setPassword(p.getProperty("Password"));
             ad.setClickOnsignUp();
             ad.otpGenerate();
-            ad.otpinput(p.getProperty("OTP"));
+            ad.enterOtp(p.getProperty("OTP"));
             ad.VerifyOtp();
+            ad.clickCancelpopup();
+            ad.clickonworkspace();
+            ad.clickMyWorkspace();
+            ad.setSelectRowsPerPage();
+            ad.headerCheckbox();
+            ad.exportClick();
+            ad.clickCancelpopupagain();
             logger.info("Login to Radar Application");
 
         } catch (Exception e) {

@@ -15,6 +15,13 @@ public class TC_010_collectionHead extends BaseClass{
             collection.otpGenerate();
             collection.otpinput(p.getProperty("OTP"));
             collection.VerifyOtp();
+            collection.clickCancelpopup();
+            collection.clickonworkspace();
+            collection.clickMyWorkspace();
+            collection.setSelectRowsPerPage();
+            collection.headerCheckbox();
+            collection.exportClick();
+            collection.clickCancelpopupagain();
             logger.info("Login to Radar Application");
 
         } catch (Exception e) {

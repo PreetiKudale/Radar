@@ -25,7 +25,7 @@ public class TC_002_dataValidationHead extends BaseClass {
             dv.setSelectRowsPerPage();
             dv.headerCheckbox();
             dv.exportClick();
-            dv.clickCanceagain();
+            dv.clickCancelpopupagain();
             logger.info("Login to Radar Application");
 
         } catch (Exception e) {

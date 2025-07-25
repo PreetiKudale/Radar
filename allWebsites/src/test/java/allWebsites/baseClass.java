@@ -13,11 +13,11 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 import utility.ExtentReportManager;
 import utility.HtmlToPdfConverter;
-
 import java.io.FileWriter;
 import java.io.IOException;
-import java.time.Duration;
 import java.lang.reflect.Method;
+import java.time.Duration;
+
 
 public class baseClass {
     public WebDriver driver;

@@ -8,14 +8,10 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class latestFileEdit extends BasePage{
-    public latestFileEdit(WebDriver driver)
-{
-    super(driver);
-}
+public class latestFileEdit {
+
 public void fileEdit() throws Exception{
     String downloadPath = System.getProperty("user.home") + "\\Downloads";
-    // Get the latest .xlsx file
     File downloadFolder = new File(downloadPath);
     File latestExcelFile = Arrays.stream(downloadFolder.listFiles((dir, name) -> name.endsWith(".xlsx")))
             .max(Comparator.comparingLong(File::lastModified))

@@ -21,7 +21,7 @@ public class TC_005_dataCleaningHead extends BaseClass{
             dc.setSelectRowsPerPage();
             dc.headerCheckbox();
             dc.exportClick();
-            dc.clickCanceagain();
+            dc.clickCancelpopupagain();
             logger.info("Login to Radar Application");
 
         } catch (Exception e) {

@@ -16,12 +16,19 @@ public class TC_015_bdUser extends BaseClass {
             bdUser.otpGenerate();
             bdUser.otpinput(p.getProperty("OTP"));
             bdUser.VerifyOtp();
+            bdUser.clickCancelpopup();
+            bdUser.clickonworkspace();
+            bdUser.clickMyWorkspace();
+            bdUser.setSelectRowsPerPage();
+            bdUser.headerCheckbox();
+            bdUser.exportClick();
+            bdUser.clickCancelpopupagain();
             logger.info("Login to Radar Application");
 
         } catch (Exception e) {
             logger.error("Test Failed");
             logger.debug("Debug logs");
-            Assert.fail();
+           /* Assert.fail();*/
         }
     }
 

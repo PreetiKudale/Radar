@@ -16,12 +16,13 @@ public class TC_001_superAdminExportOption extends BaseClass {
             lp.otpGenerate();
             lp.otpinput(p.getProperty("OTP"));
             lp.VerifyOtp();
-            lp.passwordPopUpcancelClick();
+            lp.clickCancelpopup();
             lp.clickAllFiles();
             lp.clickOnRawData();
             lp.setSelectRowsPerPage();
             lp.headerCheckbox();
             lp.exportClick();
+            lp.clickCancelpopupagain();
             logger.info("Login to Radar Application");
 
         } catch (Exception e) {
