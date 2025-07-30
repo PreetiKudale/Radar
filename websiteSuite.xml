@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationSuite">
+    <test name="Botmatic Websites">
+        <parameter name="os" value="Windows"/>
+        <parameter name="Browser" value="chrome"/>
+        <classes>
+
+           <class name ="allWebsites.ofelostrade"/>
+              <class name ="allWebsites.eliteVibes"/>
+           <class name ="allWebsites.sunriseFoundation"/>
+              <class name ="allWebsites.botmaticSolutionCom"/>
+               <class name ="allWebsites.botmaticSolutions"/>
+                <class name ="allWebsites.caJpd"/>
+               <class name ="allWebsites.claimMyShares"/>
+             <class name ="allWebsites.eliteTravelDesk"/>
+              <class name ="allWebsites.myVyayCom"/>
+
+         </classes>
+     </test>
+
+ </suite>

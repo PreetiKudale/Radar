@@ -1,0 +1,59 @@
+12:29:37.745 [main] INFO  allWebsites.ofelostrade - Validate ofelostrade
+12:29:42.871 [main] INFO  allWebsites.ofelostrade - Validate Team ofelostrade
+12:29:46.479 [main] INFO  allWebsites.ofelostrade - Validate Certificate ofelostrade
+12:29:49.980 [main] INFO  allWebsites.ofelostrade - Validate Contact us ofelostrade
+12:29:58.860 [main] INFO  allWebsites.ofelostrade - Validate Broken Links ofelostrade
+12:30:26.604 [main] INFO  allWebsites.eliteVibes - Validate Elite Vibes
+12:30:41.546 [main] INFO  allWebsites.sunriseFoundation - Validate Broken Links sunrise Foundation
+12:31:11.623 [main] INFO  allWebsites.sunriseFoundation - Validate Contact Us sunrise Foundation
+12:31:27.152 [main] INFO  allWebsites.sunriseFoundation - Validate Donate Page sunrise Foundation
+12:31:40.784 [main] INFO  allWebsites.sunriseFoundation - Validate email Box Page sunrise Foundation
+12:31:42.304 [main] INFO  allWebsites.sunriseFoundation - Validate sunrise Foundation
+12:31:44.984 [main] INFO  allWebsites.sunriseFoundation - Validate About us sunrise Foundation
+12:32:02.183 [main] INFO  allWebsites.sunriseFoundation - Validate Education sunrise Foundation
+12:32:02.346 [main] INFO  allWebsites.sunriseFoundation - Validate Gallery sunrise Foundation
+12:32:02.562 [main] INFO  allWebsites.sunriseFoundation - Validate Home Link sunrise Foundation
+12:32:02.786 [main] INFO  allWebsites.sunriseFoundation - Validate Certificate sunrise Foundation
+12:32:03.006 [main] INFO  allWebsites.sunriseFoundation - Validate Home Page sunrise Foundation
+12:32:05.395 [main] INFO  allWebsites.botmaticSolutionCom - Validate botmatic Solution Com
+12:32:09.507 [main] INFO  allWebsites.botmaticSolutionCom - Validate Home link in botmatic Solution Com
+12:32:09.699 [main] INFO  allWebsites.botmaticSolutionCom - Validate About Us Link in botmatic Solution Com
+12:32:09.825 [main] INFO  allWebsites.botmaticSolutionCom - Validate rpa Use Cases Link botmatic Solution Com
+12:32:09.944 [main] INFO  allWebsites.botmaticSolutionCom - Validate Contact Us link botmatic Solution Com
+12:32:11.136 [main] INFO  allWebsites.botmaticSolutionCom - Validate Product Opens in botmatic Solution Com
+12:32:17.234 [main] INFO  allWebsites.botmaticSolutionCom - Validate Broken Link botmatic Solution Com
+12:33:26.863 [main] INFO  allWebsites.botmaticSolutions - Validate botmatic Solutions In
+12:33:31.566 [main] INFO  allWebsites.botmaticSolutions - Validate About Us in botmatic Solutions In
+12:33:31.747 [main] INFO  allWebsites.botmaticSolutions - Validate RPA Use Cases in botmatic Solutions In
+12:33:31.867 [main] INFO  allWebsites.botmaticSolutions - Validate Broken Links in botmatic Solutions In
+12:33:40.337 [main] INFO  allWebsites.botmaticSolutions - Validate Careers alidation in botmatic Solutions In
+12:33:40.479 [main] INFO  allWebsites.botmaticSolutions - Validate Product Link botmatic Solutions In
+12:33:48.667 [main] INFO  allWebsites.botmaticSolutions - Validate Contact Us botmatic Solutions In
+12:33:52.503 [main] INFO  allWebsites.caJpd - Validate CAJPD
+12:33:54.890 [main] INFO  allWebsites.caJpd - Validate About Us Link CAJPD
+12:33:55.014 [main] INFO  allWebsites.caJpd - Validate Services page CAJPD
+12:33:55.130 [main] INFO  allWebsites.caJpd - Validate Knowlede Page CAJPD
+12:33:55.241 [main] INFO  allWebsites.caJpd - Validate Social Media Pages CAJPD
+12:34:21.791 [main] INFO  allWebsites.caJpd - Validate fill Contact page CAJPD
+12:34:56.670 [main] INFO  allWebsites.caJpd - Validate Broken Link CAJPD
+12:35:05.896 [main] INFO  allWebsites.claimMyShares - Validate claim My SharesHome Page
+12:35:11.647 [main] INFO  allWebsites.claimMyShares - Validate home link claim My Shares
+12:35:13.761 [main] INFO  allWebsites.claimMyShares - Validate About Us in claim My Shares
+12:35:20.879 [main] INFO  allWebsites.claimMyShares - Validate FAQ Link claim My Shares
+12:35:24.726 [main] INFO  allWebsites.claimMyShares - Validate Contact Form claim My Shares
+12:35:35.006 [main] INFO  allWebsites.claimMyShares - Validate Broken Link claim My Shares
+12:36:37.818 [main] INFO  allWebsites.eliteTravelDesk - Validate Elite Travel Desk
+12:36:44.571 [main] INFO  allWebsites.eliteTravelDesk - Validate Flex Pop Up Elite Travel Desk
+12:36:44.844 [main] INFO  allWebsites.eliteTravelDesk - Validate Flight, Elite Travel Desk
+12:36:45.165 [main] INFO  allWebsites.eliteTravelDesk - Validate Hotel Link Elite Travel Desk
+12:37:19.363 [main] INFO  allWebsites.eliteTravelDesk - Validate Plan A Trip Elite Travel Desk
+12:37:44.557 [main] INFO  allWebsites.eliteTravelDesk - Validate Intercity Cab link Elite Travel Desk
+12:38:16.155 [main] INFO  allWebsites.eliteTravelDesk - Validate Activity Link Elite Travel Desk
+12:38:26.313 [main] INFO  allWebsites.eliteTravelDesk - Validate Transfers Link Elite Travel Desk
+12:38:26.727 [main] INFO  allWebsites.eliteTravelDesk - Validate Organized Package Elite Travel Desk
+12:38:31.092 [main] INFO  allWebsites.myVyayCom - Validate myVyayCom
+12:38:33.872 [main] INFO  allWebsites.myVyayCom - Validate Product Link
+12:38:34.069 [main] INFO  allWebsites.myVyayCom - Validate Service Link myVyayCom
+12:38:35.988 [main] INFO  allWebsites.myVyayCom - Validate Resource link myVyayCom
+12:39:06.216 [main] INFO  allWebsites.myVyayCom - Validate About Us myVyayCom
+12:39:07.858 [main] INFO  allWebsites.myVyayCom - Validate Contact form myVyayCom
