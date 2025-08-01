@@ -16,11 +16,11 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 import utility.ExtentReportManager;
 import utility.HtmlToPdfConverter;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.time.Duration;
-
 
 public class baseClass {
     public WebDriver driver;
@@ -44,9 +44,61 @@ public class baseClass {
             System.err.println("Failed to clear log file: " + e.getMessage());
         }
     }
+
+    @BeforeClass
+    @Parameters({"os", "Browser"})
+    public void setUp(String os, String br) {
+        logger = LogManager.getLogger(this.getClass());
+        extent = ExtentReportManager.getInstance();
+
+        switch (br.toLowerCase()) {
+            case "chrome":
+                ChromeOptions chromeOptions = new ChromeOptions();
+                if (Boolean.getBoolean("headless")) {
+                    chromeOptions.addArguments("--headless=new");
+                    chromeOptions.addArguments("--window-size=1920,1080");
+                }
+                driver = new ChromeDriver(chromeOptions);
+                break;
+
+            case "firefox":
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                if (Boolean.getBoolean("headless")) {
+                    firefoxOptions.addArguments("--headless");
+                    firefoxOptions.addArguments("--width=1920");
+                    firefoxOptions.addArguments("--height=1080");
+                }
+                driver = new FirefoxDriver(firefoxOptions);
+                break;
+
+            case "edge":
+                EdgeOptions edgeOptions = new EdgeOptions();
+                if (Boolean.getBoolean("headless")) {
+                    edgeOptions.addArguments("--headless=new");
+                    edgeOptions.addArguments("--window-size=1920,1080");
+                }
+                driver = new EdgeDriver(edgeOptions);
+                break;
+
+            default:
+                System.out.println("Invalid Browser");
+                return;
+        }
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        driver.manage().deleteAllCookies();
+
+        // ✅ Maximize only in non-headless mode
+        if (!Boolean.getBoolean("headless")) {
+            driver.manage().window().maximize();
+        }
+
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+    }
+
     @BeforeMethod
     public void startTest(Method method) {
-        test = extent.createTest(method.getName());  // 💡 Log test name dynamically
+        test = extent.createTest(method.getName());
     }
 
     @AfterMethod
@@ -59,67 +111,28 @@ public class baseClass {
             test.skip("Test Skipped");
         }
     }
-    @BeforeClass
-    @Parameters({"os", "Browser"})
-    public void setUp(String os, String br) {
-        logger = LogManager.getLogger(this.getClass());
-
-        // Initialize ExtentReports
-        extent = ExtentReportManager.getInstance();
-
-        switch (br.toLowerCase()) {
-            case "chrome":
-                ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--headless=new"); // For Chrome v109+, use "--headless=new"
-                chromeOptions.addArguments("--disable-gpu");
-                chromeOptions.addArguments("--window-size=1920,1080");
-                driver = new ChromeDriver(chromeOptions);
-                break;
-
-            case "firefox":
-                FirefoxOptions firefoxOptions = new FirefoxOptions();
-                firefoxOptions.addArguments("--headless");
-                firefoxOptions.addArguments("--width=1920");
-                firefoxOptions.addArguments("--height=1080");
-                driver = new FirefoxDriver(firefoxOptions);
-                break;
-
-            case "edge":
-                EdgeOptions edgeOptions = new EdgeOptions();
-                edgeOptions.addArguments("--headless=new"); // New headless mode for Edge Chromium
-                edgeOptions.addArguments("--disable-gpu");
-                edgeOptions.addArguments("--window-size=1920,1080");
-                driver = new EdgeDriver(edgeOptions);
-                break;
-
-            default:
-                System.out.println("Invalid Browser");
-                return;
-        }
-
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-        driver.manage().deleteAllCookies();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-    }
-
 
     @AfterClass
     public void tearDown() {
-        driver.quit();
+        if (driver != null) {
+            driver.quit();
+        }
     }
 
     @AfterSuite
     public void tearDownReport() {
-        ExtentReportManager.getInstance().flush();
+        extent.flush();
 
-        // Wait for HTML file to be completely written
-        try { Thread.sleep(3000); } catch (InterruptedException e) {}
+        // Wait for file to complete writing before converting
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
-        // Convert to PDF
-        HtmlToPdfConverter.convertToPdf(
-                "test-output/ExtentReport.html",
-                "test-output/ExtentReport.pdf"
-        );
+        // Convert HTML report to PDF
+        String htmlPath = System.getProperty("user.dir") + "/test-output/ExtentReport.html";
+        String pdfPath = System.getProperty("user.dir") + "/test-output/ExtentReport.pdf";
+        HtmlToPdfConverter.convertToPdf(htmlPath, pdfPath);
     }
 }
-

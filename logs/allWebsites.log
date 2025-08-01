@@ -1,177 +1,59 @@
-14:27:57.942 [main] INFO  allWebsites.ofelostrade - Validate ofelostrade
-14:28:04.235 [main] INFO  allWebsites.ofelostrade - Validate Team ofelostrade
-14:28:06.825 [main] INFO  allWebsites.ofelostrade - Validate Certificate ofelostrade
-14:28:08.807 [main] INFO  allWebsites.ofelostrade - Validate Contact us ofelostrade
-14:28:15.925 [main] INFO  allWebsites.ofelostrade - Validate Broken Links ofelostrade
-14:28:26.555 [main] INFO  allWebsites.eliteVibes - Validate Elite Vibes
-14:28:42.752 [main] INFO  allWebsites.sunriseFoundation - Validate Broken Links sunrise Foundation
-14:29:12.789 [main] INFO  allWebsites.sunriseFoundation - Validate Contact Us sunrise Foundation
-14:29:18.132 [main] INFO  allWebsites.sunriseFoundation - Validate Donate Page sunrise Foundation
-14:29:27.732 [main] INFO  allWebsites.sunriseFoundation - Validate email Box Page sunrise Foundation
-14:29:31.996 [main] INFO  allWebsites.sunriseFoundation - Validate sunrise Foundation
-14:29:32.933 [main] INFO  allWebsites.sunriseFoundation - Validate About us sunrise Foundation
-14:29:46.269 [main] INFO  allWebsites.sunriseFoundation - Validate Education sunrise Foundation
-14:29:46.406 [main] INFO  allWebsites.sunriseFoundation - Validate Gallery sunrise Foundation
-14:29:46.619 [main] INFO  allWebsites.sunriseFoundation - Validate Home Link sunrise Foundation
-14:29:46.745 [main] INFO  allWebsites.sunriseFoundation - Validate Certificate sunrise Foundation
-14:29:46.896 [main] INFO  allWebsites.sunriseFoundation - Validate Home Page sunrise Foundation
-14:29:48.992 [main] INFO  allWebsites.botmaticSolutionCom - Validate botmatic Solution Com
-14:29:53.613 [main] INFO  allWebsites.botmaticSolutionCom - Validate Home link in botmatic Solution Com
-14:29:53.755 [main] INFO  allWebsites.botmaticSolutionCom - Validate About Us Link in botmatic Solution Com
-14:29:53.816 [main] INFO  allWebsites.botmaticSolutionCom - Validate rpa Use Cases Link botmatic Solution Com
-14:29:53.879 [main] INFO  allWebsites.botmaticSolutionCom - Validate Contact Us link botmatic Solution Com
-14:29:54.861 [main] INFO  allWebsites.botmaticSolutionCom - Validate Product Opens in botmatic Solution Com
-14:29:57.862 [main] INFO  allWebsites.botmaticSolutionCom - Validate Broken Link botmatic Solution Com
-14:30:22.404 [main] INFO  allWebsites.botmaticSolutions - Validate botmatic Solutions In
-14:30:26.137 [main] INFO  allWebsites.botmaticSolutions - Validate About Us in botmatic Solutions In
-14:30:26.209 [main] INFO  allWebsites.botmaticSolutions - Validate RPA Use Cases in botmatic Solutions In
-14:30:26.261 [main] INFO  allWebsites.botmaticSolutions - Validate Broken Links in botmatic Solutions In
-14:30:33.895 [main] INFO  allWebsites.botmaticSolutions - Validate Careers alidation in botmatic Solutions In
-14:30:33.949 [main] INFO  allWebsites.botmaticSolutions - Validate Product Link botmatic Solutions In
-14:30:37.714 [main] INFO  allWebsites.botmaticSolutions - Validate Contact Us botmatic Solutions In
-14:30:40.688 [main] INFO  allWebsites.caJpd - Validate CAJPD
-14:30:41.818 [main] INFO  allWebsites.caJpd - Validate About Us Link CAJPD
-14:30:41.919 [main] INFO  allWebsites.caJpd - Validate Services page CAJPD
-14:30:42.028 [main] INFO  allWebsites.caJpd - Validate Knowlede Page CAJPD
-14:30:42.139 [main] INFO  allWebsites.caJpd - Validate Social Media Pages CAJPD
-14:30:58.995 [main] INFO  allWebsites.caJpd - Validate fill Contact page CAJPD
-14:31:22.627 [main] INFO  allWebsites.caJpd - Validate Broken Link CAJPD
-14:31:30.320 [main] INFO  allWebsites.claimMyShares - Validate claim My SharesHome Page
-14:31:33.302 [main] INFO  allWebsites.claimMyShares - Validate home link claim My Shares
-14:31:35.570 [main] INFO  allWebsites.claimMyShares - Validate About Us in claim My Shares
-14:31:41.172 [main] INFO  allWebsites.claimMyShares - Validate FAQ Link claim My Shares
-14:31:45.339 [main] INFO  allWebsites.claimMyShares - Validate Contact Form claim My Shares
-14:31:54.418 [main] INFO  allWebsites.claimMyShares - Validate Broken Link claim My Shares
-14:32:23.756 [main] INFO  allWebsites.eliteTravelDesk - Validate Elite Travel Desk
-14:32:29.073 [main] INFO  allWebsites.eliteTravelDesk - Validate Flex Pop Up Elite Travel Desk
-14:32:29.367 [main] INFO  allWebsites.eliteTravelDesk - Validate Flight, Elite Travel Desk
-14:32:29.897 [main] INFO  allWebsites.eliteTravelDesk - Validate Hotel Link Elite Travel Desk
-14:33:03.970 [main] INFO  allWebsites.eliteTravelDesk - Validate Plan A Trip Elite Travel Desk
-14:33:43.674 [main] INFO  allWebsites.eliteTravelDesk - Validate Intercity Cab link Elite Travel Desk
-14:34:16.598 [main] INFO  allWebsites.eliteTravelDesk - Validate Activity Link Elite Travel Desk
-14:34:22.615 [main] INFO  allWebsites.eliteTravelDesk - Validate Transfers Link Elite Travel Desk
-14:34:23.082 [main] INFO  allWebsites.eliteTravelDesk - Validate Organized Package Elite Travel Desk
-14:34:27.291 [main] INFO  allWebsites.myVyayCom - Validate myVyayCom
-14:34:30.218 [main] INFO  allWebsites.myVyayCom - Validate Product Link
-14:34:30.407 [main] INFO  allWebsites.myVyayCom - Validate Service Link myVyayCom
-14:34:31.943 [main] INFO  allWebsites.myVyayCom - Validate Resource link myVyayCom
-14:35:02.216 [main] INFO  allWebsites.myVyayCom - Validate About Us myVyayCom
-14:35:03.958 [main] INFO  allWebsites.myVyayCom - Validate Contact form myVyayCom
-14:35:16.963 [main] INFO  allWebsites.ofelostrade - Validate ofelostrade
-14:35:21.374 [main] INFO  allWebsites.ofelostrade - Validate Team ofelostrade
-14:35:25.168 [main] INFO  allWebsites.ofelostrade - Validate Certificate ofelostrade
-14:35:27.610 [main] INFO  allWebsites.ofelostrade - Validate Contact us ofelostrade
-14:35:33.042 [main] INFO  allWebsites.ofelostrade - Validate Broken Links ofelostrade
-14:35:46.558 [main] INFO  allWebsites.eliteVibes - Validate Elite Vibes
-14:36:00.600 [main] INFO  allWebsites.sunriseFoundation - Validate Broken Links sunrise Foundation
-14:36:30.640 [main] INFO  allWebsites.sunriseFoundation - Validate Contact Us sunrise Foundation
-14:36:36.897 [main] INFO  allWebsites.sunriseFoundation - Validate Donate Page sunrise Foundation
-14:36:39.039 [main] INFO  allWebsites.sunriseFoundation - Validate email Box Page sunrise Foundation
-14:36:40.920 [main] INFO  allWebsites.sunriseFoundation - Validate sunrise Foundation
-14:36:42.603 [main] INFO  allWebsites.sunriseFoundation - Validate About us sunrise Foundation
-14:36:49.563 [main] INFO  allWebsites.sunriseFoundation - Validate Education sunrise Foundation
-14:36:49.766 [main] INFO  allWebsites.sunriseFoundation - Validate Gallery sunrise Foundation
-14:36:49.882 [main] INFO  allWebsites.sunriseFoundation - Validate Home Link sunrise Foundation
-14:36:49.951 [main] INFO  allWebsites.sunriseFoundation - Validate Certificate sunrise Foundation
-14:36:50.078 [main] INFO  allWebsites.sunriseFoundation - Validate Home Page sunrise Foundation
-14:36:56.975 [main] INFO  allWebsites.botmaticSolutionCom - Validate botmatic Solution Com
-14:37:00.550 [main] INFO  allWebsites.botmaticSolutionCom - Validate Home link in botmatic Solution Com
-14:37:00.648 [main] INFO  allWebsites.botmaticSolutionCom - Validate About Us Link in botmatic Solution Com
-14:37:00.683 [main] INFO  allWebsites.botmaticSolutionCom - Validate rpa Use Cases Link botmatic Solution Com
-14:37:00.721 [main] INFO  allWebsites.botmaticSolutionCom - Validate Contact Us link botmatic Solution Com
-14:37:01.627 [main] INFO  allWebsites.botmaticSolutionCom - Validate Product Opens in botmatic Solution Com
-14:37:01.984 [main] INFO  allWebsites.botmaticSolutionCom - Validate Broken Link botmatic Solution Com
-14:37:16.730 [main] INFO  allWebsites.botmaticSolutions - Validate botmatic Solutions In
-14:37:20.137 [main] INFO  allWebsites.botmaticSolutions - Validate About Us in botmatic Solutions In
-14:37:20.246 [main] INFO  allWebsites.botmaticSolutions - Validate RPA Use Cases in botmatic Solutions In
-14:37:20.295 [main] INFO  allWebsites.botmaticSolutions - Validate Broken Links in botmatic Solutions In
-14:37:27.920 [main] INFO  allWebsites.botmaticSolutions - Validate Careers alidation in botmatic Solutions In
-14:37:27.959 [main] INFO  allWebsites.botmaticSolutions - Validate Product Link botmatic Solutions In
-14:37:36.498 [main] INFO  allWebsites.botmaticSolutions - Validate Contact Us botmatic Solutions In
-14:37:43.983 [main] INFO  allWebsites.caJpd - Validate CAJPD
-14:37:46.073 [main] INFO  allWebsites.caJpd - Validate About Us Link CAJPD
-14:37:46.190 [main] INFO  allWebsites.caJpd - Validate Services page CAJPD
-14:37:46.415 [main] INFO  allWebsites.caJpd - Validate Knowlede Page CAJPD
-14:37:46.561 [main] INFO  allWebsites.caJpd - Validate Social Media Pages CAJPD
-14:38:06.103 [main] INFO  allWebsites.caJpd - Validate fill Contact page CAJPD
-14:38:07.413 [main] INFO  allWebsites.caJpd - Validate Broken Link CAJPD
-14:38:19.974 [main] INFO  allWebsites.claimMyShares - Validate claim My SharesHome Page
-14:38:23.656 [main] INFO  allWebsites.claimMyShares - Validate home link claim My Shares
-14:38:26.479 [main] INFO  allWebsites.claimMyShares - Validate About Us in claim My Shares
-14:38:32.270 [main] INFO  allWebsites.claimMyShares - Validate FAQ Link claim My Shares
-14:38:34.553 [main] INFO  allWebsites.claimMyShares - Validate Contact Form claim My Shares
-14:38:42.680 [main] INFO  allWebsites.claimMyShares - Validate Broken Link claim My Shares
-14:39:22.356 [main] INFO  allWebsites.eliteTravelDesk - Validate Elite Travel Desk
-14:39:25.158 [main] INFO  allWebsites.eliteTravelDesk - Validate Flex Pop Up Elite Travel Desk
-14:39:26.501 [main] INFO  allWebsites.eliteTravelDesk - Validate Flight, Elite Travel Desk
-14:39:26.660 [main] INFO  allWebsites.eliteTravelDesk - Validate Hotel Link Elite Travel Desk
-14:40:03.318 [main] INFO  allWebsites.eliteTravelDesk - Validate Plan A Trip Elite Travel Desk
-14:40:33.929 [main] INFO  allWebsites.eliteTravelDesk - Validate Intercity Cab link Elite Travel Desk
-14:41:12.349 [main] INFO  allWebsites.eliteTravelDesk - Validate Activity Link Elite Travel Desk
-14:41:22.873 [main] INFO  allWebsites.eliteTravelDesk - Validate Transfers Link Elite Travel Desk
-14:41:24.951 [main] INFO  allWebsites.eliteTravelDesk - Validate Organized Package Elite Travel Desk
-14:41:35.341 [main] INFO  allWebsites.myVyayCom - Validate myVyayCom
-14:41:40.667 [main] INFO  allWebsites.myVyayCom - Validate Product Link
-14:41:40.851 [main] INFO  allWebsites.myVyayCom - Validate Service Link myVyayCom
-14:41:41.627 [main] INFO  allWebsites.myVyayCom - Validate Resource link myVyayCom
-14:42:11.951 [main] INFO  allWebsites.myVyayCom - Validate About Us myVyayCom
-14:42:12.818 [main] INFO  allWebsites.myVyayCom - Validate Contact form myVyayCom
-14:42:23.820 [main] INFO  allWebsites.ofelostrade - Validate ofelostrade
-14:42:29.054 [main] INFO  allWebsites.ofelostrade - Validate Team ofelostrade
-14:42:31.881 [main] INFO  allWebsites.ofelostrade - Validate Certificate ofelostrade
-14:42:34.494 [main] INFO  allWebsites.ofelostrade - Validate Contact us ofelostrade
-14:42:39.849 [main] INFO  allWebsites.ofelostrade - Validate Broken Links ofelostrade
-14:42:47.450 [main] INFO  allWebsites.eliteVibes - Validate Elite Vibes
-14:43:02.007 [main] INFO  allWebsites.sunriseFoundation - Validate Broken Links sunrise Foundation
-14:43:32.063 [main] INFO  allWebsites.sunriseFoundation - Validate Contact Us sunrise Foundation
-14:43:38.472 [main] INFO  allWebsites.sunriseFoundation - Validate Donate Page sunrise Foundation
-14:43:48.183 [main] INFO  allWebsites.sunriseFoundation - Validate email Box Page sunrise Foundation
-14:43:51.725 [main] INFO  allWebsites.sunriseFoundation - Validate sunrise Foundation
-14:43:52.588 [main] INFO  allWebsites.sunriseFoundation - Validate About us sunrise Foundation
-14:44:05.414 [main] INFO  allWebsites.sunriseFoundation - Validate Education sunrise Foundation
-14:44:05.524 [main] INFO  allWebsites.sunriseFoundation - Validate Gallery sunrise Foundation
-14:44:05.677 [main] INFO  allWebsites.sunriseFoundation - Validate Home Link sunrise Foundation
-14:44:05.840 [main] INFO  allWebsites.sunriseFoundation - Validate Certificate sunrise Foundation
-14:44:05.992 [main] INFO  allWebsites.sunriseFoundation - Validate Home Page sunrise Foundation
-14:44:09.189 [main] INFO  allWebsites.botmaticSolutionCom - Validate botmatic Solution Com
-14:44:14.201 [main] INFO  allWebsites.botmaticSolutionCom - Validate Home link in botmatic Solution Com
-14:44:14.274 [main] INFO  allWebsites.botmaticSolutionCom - Validate About Us Link in botmatic Solution Com
-14:44:14.323 [main] INFO  allWebsites.botmaticSolutionCom - Validate rpa Use Cases Link botmatic Solution Com
-14:44:14.373 [main] INFO  allWebsites.botmaticSolutionCom - Validate Contact Us link botmatic Solution Com
-14:44:15.233 [main] INFO  allWebsites.botmaticSolutionCom - Validate Product Opens in botmatic Solution Com
-14:44:19.229 [main] INFO  allWebsites.botmaticSolutionCom - Validate Broken Link botmatic Solution Com
-14:44:42.852 [main] INFO  allWebsites.botmaticSolutions - Validate botmatic Solutions In
-14:44:47.794 [main] INFO  allWebsites.botmaticSolutions - Validate About Us in botmatic Solutions In
-14:44:47.858 [main] INFO  allWebsites.botmaticSolutions - Validate RPA Use Cases in botmatic Solutions In
-14:44:47.903 [main] INFO  allWebsites.botmaticSolutions - Validate Broken Links in botmatic Solutions In
-14:44:55.462 [main] INFO  allWebsites.botmaticSolutions - Validate Careers alidation in botmatic Solutions In
-14:44:55.588 [main] INFO  allWebsites.botmaticSolutions - Validate Product Link botmatic Solutions In
-14:45:01.602 [main] INFO  allWebsites.botmaticSolutions - Validate Contact Us botmatic Solutions In
-14:45:04.016 [main] INFO  allWebsites.caJpd - Validate CAJPD
-14:45:07.486 [main] INFO  allWebsites.caJpd - Validate About Us Link CAJPD
-14:45:07.668 [main] INFO  allWebsites.caJpd - Validate Services page CAJPD
-14:45:07.829 [main] INFO  allWebsites.caJpd - Validate Knowlede Page CAJPD
-14:45:08.000 [main] INFO  allWebsites.caJpd - Validate Social Media Pages CAJPD
-14:45:24.982 [main] INFO  allWebsites.caJpd - Validate fill Contact page CAJPD
-14:45:48.348 [main] INFO  allWebsites.caJpd - Validate Broken Link CAJPD
-14:45:59.527 [main] INFO  allWebsites.claimMyShares - Validate claim My SharesHome Page
-14:46:04.558 [main] INFO  allWebsites.claimMyShares - Validate home link claim My Shares
-14:46:06.064 [main] INFO  allWebsites.claimMyShares - Validate About Us in claim My Shares
-14:46:10.344 [main] INFO  allWebsites.claimMyShares - Validate FAQ Link claim My Shares
-14:46:14.180 [main] INFO  allWebsites.claimMyShares - Validate Contact Form claim My Shares
-14:46:22.998 [main] INFO  allWebsites.claimMyShares - Validate Broken Link claim My Shares
-14:47:06.313 [main] INFO  allWebsites.eliteTravelDesk - Validate Elite Travel Desk
-14:47:16.614 [main] INFO  allWebsites.eliteTravelDesk - Validate Flex Pop Up Elite Travel Desk
-14:47:16.914 [main] INFO  allWebsites.eliteTravelDesk - Validate Flight, Elite Travel Desk
-14:47:17.404 [main] INFO  allWebsites.eliteTravelDesk - Validate Hotel Link Elite Travel Desk
-14:47:51.645 [main] INFO  allWebsites.eliteTravelDesk - Validate Plan A Trip Elite Travel Desk
-14:48:40.626 [main] INFO  allWebsites.eliteTravelDesk - Validate Intercity Cab link Elite Travel Desk
-14:49:16.358 [main] INFO  allWebsites.eliteTravelDesk - Validate Activity Link Elite Travel Desk
-14:49:26.358 [main] INFO  allWebsites.eliteTravelDesk - Validate Transfers Link Elite Travel Desk
-14:49:26.828 [main] INFO  allWebsites.eliteTravelDesk - Validate Organized Package Elite Travel Desk
-14:49:31.927 [main] INFO  allWebsites.myVyayCom - Validate myVyayCom
-14:49:38.214 [main] INFO  allWebsites.myVyayCom - Validate Product Link
-14:49:38.429 [main] INFO  allWebsites.myVyayCom - Validate Service Link myVyayCom
-14:49:39.918 [main] INFO  allWebsites.myVyayCom - Validate Resource link myVyayCom
-14:50:10.131 [main] INFO  allWebsites.myVyayCom - Validate About Us myVyayCom
-14:50:11.512 [main] INFO  allWebsites.myVyayCom - Validate Contact form myVyayCom
+15:33:55.180 [main] INFO  allWebsites.ofelostrade - Validate ofelostrade
+15:34:00.896 [main] INFO  allWebsites.ofelostrade - Validate Team ofelostrade
+15:34:04.223 [main] INFO  allWebsites.ofelostrade - Validate Certificate ofelostrade
+15:34:07.917 [main] INFO  allWebsites.ofelostrade - Validate Contact us ofelostrade
+15:34:15.555 [main] INFO  allWebsites.ofelostrade - Validate Broken Links ofelostrade
+15:34:26.722 [main] INFO  allWebsites.eliteVibes - Validate Elite Vibes
+15:34:39.025 [main] INFO  allWebsites.sunriseFoundation - Validate Broken Links sunrise Foundation
+15:35:09.051 [main] INFO  allWebsites.sunriseFoundation - Validate Contact Us sunrise Foundation
+15:35:13.578 [main] INFO  allWebsites.sunriseFoundation - Validate Donate Page sunrise Foundation
+15:35:23.071 [main] INFO  allWebsites.sunriseFoundation - Validate email Box Page sunrise Foundation
+15:35:24.083 [main] INFO  allWebsites.sunriseFoundation - Validate sunrise Foundation
+15:35:25.510 [main] INFO  allWebsites.sunriseFoundation - Validate About us sunrise Foundation
+15:35:39.293 [main] INFO  allWebsites.sunriseFoundation - Validate Education sunrise Foundation
+15:35:39.361 [main] INFO  allWebsites.sunriseFoundation - Validate Gallery sunrise Foundation
+15:35:39.413 [main] INFO  allWebsites.sunriseFoundation - Validate Home Link sunrise Foundation
+15:35:39.461 [main] INFO  allWebsites.sunriseFoundation - Validate Certificate sunrise Foundation
+15:35:39.514 [main] INFO  allWebsites.sunriseFoundation - Validate Home Page sunrise Foundation
+15:35:40.550 [main] INFO  allWebsites.botmaticSolutionCom - Validate botmatic Solution Com
+15:35:43.602 [main] INFO  allWebsites.botmaticSolutionCom - Validate Home link in botmatic Solution Com
+15:35:43.662 [main] INFO  allWebsites.botmaticSolutionCom - Validate About Us Link in botmatic Solution Com
+15:35:43.734 [main] INFO  allWebsites.botmaticSolutionCom - Validate rpa Use Cases Link botmatic Solution Com
+15:35:43.797 [main] INFO  allWebsites.botmaticSolutionCom - Validate Contact Us link botmatic Solution Com
+15:35:44.703 [main] INFO  allWebsites.botmaticSolutionCom - Validate Product Opens in botmatic Solution Com
+15:35:48.059 [main] INFO  allWebsites.botmaticSolutionCom - Validate Broken Link botmatic Solution Com
+15:36:11.130 [main] INFO  allWebsites.botmaticSolutions - Validate botmatic Solutions In
+15:36:13.904 [main] INFO  allWebsites.botmaticSolutions - Validate About Us in botmatic Solutions In
+15:36:13.992 [main] INFO  allWebsites.botmaticSolutions - Validate RPA Use Cases in botmatic Solutions In
+15:36:14.124 [main] INFO  allWebsites.botmaticSolutions - Validate Broken Links in botmatic Solutions In
+15:36:20.801 [main] INFO  allWebsites.botmaticSolutions - Validate Careers alidation in botmatic Solutions In
+15:36:20.849 [main] INFO  allWebsites.botmaticSolutions - Validate Product Link botmatic Solutions In
+15:36:26.198 [main] INFO  allWebsites.botmaticSolutions - Validate Contact Us botmatic Solutions In
+15:36:28.653 [main] INFO  allWebsites.caJpd - Validate CAJPD
+15:36:32.752 [main] INFO  allWebsites.caJpd - Validate About Us Link CAJPD
+15:36:32.795 [main] INFO  allWebsites.caJpd - Validate Services page CAJPD
+15:36:32.842 [main] INFO  allWebsites.caJpd - Validate Knowlede Page CAJPD
+15:36:32.892 [main] INFO  allWebsites.caJpd - Validate Social Media Pages CAJPD
+15:36:51.360 [main] INFO  allWebsites.caJpd - Validate fill Contact page CAJPD
+15:37:14.585 [main] INFO  allWebsites.caJpd - Validate Broken Link CAJPD
+15:37:21.343 [main] INFO  allWebsites.claimMyShares - Validate claim My SharesHome Page
+15:37:25.226 [main] INFO  allWebsites.claimMyShares - Validate home link claim My Shares
+15:37:26.971 [main] INFO  allWebsites.claimMyShares - Validate About Us in claim My Shares
+15:37:32.097 [main] INFO  allWebsites.claimMyShares - Validate FAQ Link claim My Shares
+15:37:35.300 [main] INFO  allWebsites.claimMyShares - Validate Contact Form claim My Shares
+15:37:42.693 [main] INFO  allWebsites.claimMyShares - Validate Broken Link claim My Shares
+15:38:37.257 [main] INFO  allWebsites.eliteTravelDesk - Validate Elite Travel Desk
+15:38:43.143 [main] INFO  allWebsites.eliteTravelDesk - Validate Flex Pop Up Elite Travel Desk
+15:38:43.350 [main] INFO  allWebsites.eliteTravelDesk - Validate Flight, Elite Travel Desk
+15:38:43.576 [main] INFO  allWebsites.eliteTravelDesk - Validate Hotel Link Elite Travel Desk
+15:39:16.137 [main] INFO  allWebsites.eliteTravelDesk - Validate Plan A Trip Elite Travel Desk
+15:39:41.134 [main] INFO  allWebsites.eliteTravelDesk - Validate Intercity Cab link Elite Travel Desk
+15:40:12.062 [main] INFO  allWebsites.eliteTravelDesk - Validate Activity Link Elite Travel Desk
+15:40:17.567 [main] INFO  allWebsites.eliteTravelDesk - Validate Transfers Link Elite Travel Desk
+15:40:17.835 [main] INFO  allWebsites.eliteTravelDesk - Validate Organized Package Elite Travel Desk
+15:40:20.364 [main] INFO  allWebsites.myVyayCom - Validate myVyayCom
+15:40:26.562 [main] INFO  allWebsites.myVyayCom - Validate Product Link
+15:40:26.720 [main] INFO  allWebsites.myVyayCom - Validate Service Link myVyayCom
+15:40:28.013 [main] INFO  allWebsites.myVyayCom - Validate Resource link myVyayCom
+15:40:58.199 [main] INFO  allWebsites.myVyayCom - Validate About Us myVyayCom
+15:40:58.924 [main] INFO  allWebsites.myVyayCom - Validate Contact form myVyayCom

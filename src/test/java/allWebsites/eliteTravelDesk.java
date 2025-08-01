@@ -164,10 +164,6 @@ for(WebElement selectdate:alldates){
     public void intercityCabs() throws InterruptedException {
         logger.info("Validate Intercity Cab link Elite Travel Desk");
         driver.get("https://elitetraveldesk.com/search/trips#drive");
-
-        // Zoom out to ensure all elements are interactable
-        ((JavascriptExecutor) driver).executeScript("document.body.style.zoom='70%'");
-
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
         // Origin Input
@@ -204,38 +200,7 @@ for(WebElement selectdate:alldates){
             System.out.println("No popup. Redirect successful. Validation passed.");
             driver.navigate().back();
         }
-    }/*
-            @Test(priority = 6)
-            public void intercityCabs () throws InterruptedException {
-                driver.get("https://elitetraveldesk.com/search/trips#drive");
-                ((JavascriptExecutor) driver).executeScript("document.body.style.zoom='70%'");
-                wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-                WebElement origin = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search_input_intercity-origin']")));
-               // origin.click();
-                origin.sendKeys("Mumbai");
-                WebElement mumbaiSuggestion = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='boldProx agency-color'][normalize-space()='Mumbai']")));
-                mumbaiSuggestion.click();
-                WebElement destination = driver.findElement(By.xpath("//input[@id='search_input_intercity-destination']"));
-                destination.click();
-                destination.sendKeys("Pune");
-                WebElement puneSuggestion = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[@id='dropDownL_intercity-destination']")));  //span[@class='boldProx agency-color'][normalize-space()='Pune']
-                puneSuggestion.click();
-                driver.findElement(By.xpath("//button[@type='submit']//span[normalize-space()='Search']")).click();
-                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-                try {
-                    WebElement modal = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                            By.xpath("//div[@class='modal-body container ng-star-inserted']")));
-                    WebElement backToSearchBtn = wait.until(ExpectedConditions.elementToBeClickable(
-                            By.xpath("//span[@class='mat-button-wrapper'][normalize-space()='Back to Search']")));
-                    backToSearchBtn.click();
-                    System.out.println("Popup appeared and handled by clicking 'Back to Search'.");
-                } catch (TimeoutException e) {
-                    String currentUrl = driver.getCurrentUrl();
-                    Assert.assertTrue(currentUrl.contains("https://elitetraveldesk.com/detail/drive-in"), "URL is incorrect!");
-                    System.out.println("Validation passed.");
-                    driver.navigate().back();
-                }
-            }*/
+    }
             @Test(priority =7 )
             public void activityLinkValidation() throws InterruptedException{
                 logger.info("Validate Activity Link Elite Travel Desk");

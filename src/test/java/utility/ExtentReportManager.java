@@ -8,9 +8,17 @@ public class ExtentReportManager {
 
     public static ExtentReports getInstance() {
         if (extent == null) {
-            ExtentSparkReporter spark = new ExtentSparkReporter("test-output/ExtentReport.html");
+            // Always generate full path for consistent behavior across local & Jenkins
+            String reportPath = System.getProperty("user.dir") + "/test-output/ExtentReport.html";
+            ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
+
             extent = new ExtentReports();
             extent.attachReporter(spark);
+
+            // Optional: Set system info (can be viewed in the report)
+            extent.setSystemInfo("Framework", "Selenium");
+            extent.setSystemInfo("Environment", "QA");
+            extent.setSystemInfo("Author", "Preeti");
         }
         return extent;
     }
