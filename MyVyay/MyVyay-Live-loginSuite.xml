@@ -3,12 +3,10 @@
 <suite name="MyVyay.live">
     <test name="MyVyay.live">
         <parameter name="os" value="Windows"/>
-        <!-- <parameter name="Browser" value="chrome"/> -->
-        <parameter name="Browser" value="edge"/>
-        <!--  <parameter name="Browser" value="firefox"/> -->
+        <parameter name="Browser" value="chrome"/>
          <classes>
-             <class name ="testCases.TC_001_LoginPage"/>
-             <!-- <class name ="testCases.TC_002_SignUpEnglish"/> -->
+             <!--<class name ="testCases.TC_001_LoginPage"/>-->
+            <class name ="testCases.TC_002_SignUpEnglish"/>
             <!--  <class name ="testCases.TC_003_SignUpInEspanol"/> -->
 
          </classes>

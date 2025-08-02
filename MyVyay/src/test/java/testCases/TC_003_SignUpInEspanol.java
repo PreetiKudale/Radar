@@ -13,9 +13,9 @@ public class TC_003_SignUpInEspanol extends BaseClass {
         ((JavascriptExecutor) driver).executeScript("document.body.style.zoom='70%'");
         sie.selectLanguageEspanol();
         sie.register();
-        sie.setInputName("Preeti");
-        sie.setLastName("Automation");
-        sie.setEmail("preeti.test1@botmaticsolution.in");
+        sie.setInputName(p.getProperty("InputName"));
+        sie.setLastName(p.getProperty("LastName"));
+        sie.setEmail(p.getProperty("Email"));
         sie.setMobileNumber(randomNumber());
         sie.setCompanyName("Automation Test Company");
         sie.setClickSignUp();

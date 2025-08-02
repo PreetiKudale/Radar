@@ -12,12 +12,12 @@ public class TC_002_SignUpEnglish extends BaseClass{
     SignUpEnglish sp = new SignUpEnglish(driver);
        sp.setLanguagedrpEnglish();
        ((JavascriptExecutor) driver).executeScript("document.body.style.zoom='70%'");
-        sp.setSignUpLink();
-        sp.setInputName("Preeti");
-        sp.setLastName("Automation");
-        sp.setEmail("preeti.test1@botmaticsolution.in");
+        sp.setSignUpLink();gitj
+        sp.setInputName(p.getProperty("InputName"));
+        sp.setLastName(p.getProperty("LastName"));
+        sp.setEmail(p.getProperty("Email"));
         sp.setMobileNumber(randomNumber());
-        sp.setCompanyName("Automation Test Company");
+        sp.setCompanyName(p.getProperty("CompanyName"));
         sp.setClickSignUp();
         String confirmationMsg = sp.getConetntmsgSuccesfull();
         Assert.assertEquals(confirmationMsg, "Email sent successfully");
