@@ -12,7 +12,7 @@ public class TC_002_SignUpEnglish extends BaseClass{
     SignUpEnglish sp = new SignUpEnglish(driver);
        sp.setLanguagedrpEnglish();
        ((JavascriptExecutor) driver).executeScript("document.body.style.zoom='70%'");
-        sp.setSignUpLink();gitj
+        sp.setSignUpLink();
         sp.setInputName(p.getProperty("InputName"));
         sp.setLastName(p.getProperty("LastName"));
         sp.setEmail(p.getProperty("Email"));
