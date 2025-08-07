@@ -46,27 +46,21 @@ public class superAdminRawData extends BasePage {
     public void setUserName(String username) {
         userName.sendKeys(username);
     }
-
     public void setPassword(String Password) {
         password.sendKeys(Password);
     }
-
     public void setClickOnsignUp() {
         ClickOnsignUp.click();
     }
-
     public void otpGenerate() {
         generateOtp.click();
     }
-
     public void otpinput(String otpNo) {
         otp.sendKeys(otpNo);
     }
-
     public void VerifyOtp() {
         verifyOTP.click();
     }
-
     public void clickCancelpopup() {
         try {
             if (pwdPopUpcancelClick.isDisplayed()) {
@@ -86,11 +80,9 @@ public class superAdminRawData extends BasePage {
     public void clickAllFiles() {
         clickAllFiles.click();
     }
-
     public void clickOnRawData() {
         clickOnRawData.click();
     }
-
     public void exportClick() throws Exception{
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement exportBtn = wait.until(ExpectedConditions.elementToBeClickable(exportButton));

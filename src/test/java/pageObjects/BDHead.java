@@ -60,8 +60,10 @@ public class BDHead extends BasePage{
         generateOtp.click();
     }
 
-    public void otpinput(String otpNo) {
-        otp.sendKeys(otpNo);
+    public void enterOtp(String otp) {
+        for (int i = 0; i < otp.length(); i++) {
+            driver.findElement(By.id("otp-" + i)).sendKeys(String.valueOf(otp.charAt(i)));
+        }
     }
 
     public void VerifyOtp() {
@@ -85,9 +87,8 @@ public class BDHead extends BasePage{
     public void clickonworkspace() {
         workspace.click();
     }
-    public void clickMyWorkspace()throws Exception {
+    public void clickMyWorkspace() {
         myWorkspace.click();
-        Thread.sleep(5000);
     }
     public void setSelectRowsPerPage() {
         try {

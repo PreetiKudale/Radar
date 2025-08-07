@@ -60,8 +60,10 @@ public class inbound extends BasePage{
         generateOtp.click();
     }
 
-    public void otpinput(String otpNo) {
-        otp.sendKeys(otpNo);
+    public void enterOtp(String otp) {
+        for (int i = 0; i < otp.length(); i++) {
+            driver.findElement(By.id("otp-" + i)).sendKeys(String.valueOf(otp.charAt(i)));
+        }
     }
 
     public void VerifyOtp() {
@@ -138,19 +140,19 @@ public class inbound extends BasePage{
         robot.keyRelease(KeyEvent.VK_ENTER);
         driver.navigate().back();
     }
-        public void clickCancelpopupagain() {
-            try {
-                if (pwdPopUpcancelClick.isDisplayed()) {
-                    pwdPopUpcancelClick.click();
-                    Thread.sleep(2000); // Optional pause
-                }
-            } catch (NoSuchElementException | ElementNotInteractableException e) {
-                System.out.println("Cancel popup not found or not clickable. Proceeding with the test.");
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-                System.out.println("Interrupted while waiting after cancel popup.");
-            } catch (Exception e) {
-                System.out.println("Unexpected error in clickCancelpopup(): " + e.getMessage());
+    public void clickCancelpopupagain() {
+        try {
+            if (pwdPopUpcancelClick.isDisplayed()) {
+                pwdPopUpcancelClick.click();
+                Thread.sleep(2000); // Optional pause
             }
+        } catch (NoSuchElementException | ElementNotInteractableException e) {
+            System.out.println("Cancel popup not found or not clickable. Proceeding with the test.");
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            System.out.println("Interrupted while waiting after cancel popup.");
+        } catch (Exception e) {
+            System.out.println("Unexpected error in clickCancelpopup(): " + e.getMessage());
         }
     }
+}

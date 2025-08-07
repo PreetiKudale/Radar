@@ -14,7 +14,7 @@ public class TC_004_RTAHead extends BaseClass{
             rta.setPassword(p.getProperty("Password"));
             rta.setClickOnsignUp();
             rta.otpGenerate();
-            rta.otpinput(p.getProperty("OTP"));
+            rta.enterOtp(p.getProperty("OTP"));
             rta.VerifyOtp();
             rta.clickCancelpopup();
             rta.clickonworkspace();
@@ -25,12 +25,12 @@ public class TC_004_RTAHead extends BaseClass{
             rta.clickCancelpopupagain();
             logger.info("Login to Radar Application");
 
-        } catch (SkipException se) {
-            logger.warn("Test Skipped: " + se.getMessage());
-            throw se; // Let TestNG handle skip
+        } catch (SkipException e) {
+            throw e;  // Don't catch this — let TestNG treat it as skipped
         } catch (Exception e) {
-            logger.error("Test Failed", e);
-            Assert.fail("Test failed due to: " + e.getMessage());
+            logger.error("Test Failed");
+            logger.debug("Debug logs");
+            Assert.fail("Test case failed due to exception: " + e.getMessage());
         }
     }
 }

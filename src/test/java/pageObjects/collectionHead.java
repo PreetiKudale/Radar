@@ -60,8 +60,10 @@ public class collectionHead extends BasePage{
         generateOtp.click();
     }
 
-    public void otpinput(String otpNo) {
-        otp.sendKeys(otpNo);
+    public void enterOtp(String otp) {
+        for (int i = 0; i < otp.length(); i++) {
+            driver.findElement(By.id("otp-" + i)).sendKeys(String.valueOf(otp.charAt(i)));
+        }
     }
 
     public void VerifyOtp() {

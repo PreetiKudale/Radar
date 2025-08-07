@@ -1,6 +1,7 @@
 package testCases;
 
 import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.Test;
 import pageObjects.commsHead;
 
@@ -13,7 +14,7 @@ public class TC_006_commsHead extends BaseClass {
             commsHead.setPassword(p.getProperty("Password"));
             commsHead.setClickOnsignUp();
             commsHead.otpGenerate();
-            commsHead.otpinput(p.getProperty("OTP"));
+            commsHead.enterOtp(p.getProperty("OTP"));
             commsHead.VerifyOtp();
             commsHead.clickCancelpopup();
             commsHead.clickonworkspace();
@@ -24,10 +25,12 @@ public class TC_006_commsHead extends BaseClass {
             commsHead.clickCancelpopupagain();
             logger.info("Login to Radar Application");
 
+        } catch (SkipException e) {
+            throw e;  // Don't catch this — let TestNG treat it as skipped
         } catch (Exception e) {
             logger.error("Test Failed");
             logger.debug("Debug logs");
-            Assert.fail();
+            Assert.fail("Test case failed due to exception: " + e.getMessage());
         }
     }
 }

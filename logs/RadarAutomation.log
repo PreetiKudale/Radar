@@ -1,6 +1,40 @@
-16:26:55.782 [main] INFO  testCases.TC_011_DVUser - Login to Radar Application
-16:27:41.382 [main] INFO  testCases.TC_012_DCUser - Login to Radar Application
-16:28:12.998 [main] ERROR testCases.TC_013_RtaUser - Test Failed
-16:28:46.768 [main] ERROR testCases.TC_014_CommsUser - Test Failed
-16:29:21.465 [main] ERROR testCases.TC_015_bdUser - Test Failed
-16:30:35.284 [main] INFO  testCases.TC_016_OpsUser - Login to Radar Application
+11:55:06.338 [main] INFO  testCases.TC_011_DVUser - Login to Radar Application
+11:55:41.231 [main] ERROR testCases.TC_013_RtaUser - Test Failed
+11:56:12.831 [main] ERROR testCases.TC_014_CommsUser - Test Failed
+11:56:47.029 [main] ERROR testCases.TC_015_bdUser - Test Failed
+11:58:02.558 [main] INFO  testCases.TC_016_OpsUser - Login to Radar Application
+14:30:44.727 [main] INFO  testCases.TC_011_DVUser - Login to Radar Application
+14:31:21.460 [main] INFO  testCases.TC_012_DCUser - Login to Radar Application
+14:31:50.512 [main] ERROR testCases.TC_013_RtaUser - Test Failed
+14:32:18.905 [main] ERROR testCases.TC_014_CommsUser - Test Failed
+14:32:47.725 [main] ERROR testCases.TC_015_bdUser - Test Failed
+14:33:56.749 [main] INFO  testCases.TC_016_OpsUser - Login to Radar Application
+15:01:03.889 [main] ERROR testCases.TC_003_adminPage - Test Failed
+15:49:11.250 [main] ERROR testCases.TC_011_DVUser - Test Failed
+15:49:42.725 [main] ERROR testCases.TC_016_OpsUser - Test Failed
+15:50:57.903 [main] ERROR testCases.TC_011_DVUser - Test Failed
+14:48:37.381 [main] ERROR testCases.TC_011_DVUser - Test Failed
+14:52:49.267 [main] ERROR testCases.TC_011_DVUser - Test Failed
+15:20:16.187 [main] ERROR testCases.TC_011_DVUser - Test Failed
+15:23:46.315 [main] ERROR testCases.TC_011_DVUser - Test Failed
+15:28:24.781 [main] ERROR testCases.TC_011_DVUser - Test Failed
+15:30:15.251 [main] ERROR testCases.TC_011_DVUser - Test Failed
+15:37:28.830 [main] INFO  testCases.TC_002_dataValidationHead - Login to Radar Application
+15:37:28.890 [main] INFO  testCases.TC_002_dataValidationHead - Login to Radar Application
+15:42:02.489 [main] ERROR testCases.TC_011_DVUser - Test Failed
+15:55:41.199 [main] ERROR testCases.TC_001_superAdminExportOption - Test Failed
+15:59:27.638 [main] ERROR testCases.TC_001_superAdminExportOption - Test Failed
+16:14:56.162 [main] ERROR testCases.TC_001_superAdminExportOption - Test Failed
+18:30:39.348 [main] ERROR testCases.TC_001_superAdminExportOption - Test Failed
+18:50:45.819 [main] ERROR testCases.TC_020_superAdminRawData - Test Failed
+18:55:15.459 [main] ERROR testCases.TC_012_DCUser - Test Failed
+18:55:43.499 [main] ERROR testCases.TC_013_RtaUser - Test Failed
+18:56:06.628 [main] ERROR testCases.TC_014_CommsUser - Test Failed
+18:56:29.534 [main] ERROR testCases.TC_015_bdUser - Test Failed
+18:59:44.040 [main] ERROR testCases.TC_013_RtaUser - Test Failed
+19:00:47.432 [main] ERROR testCases.TC_015_bdUser - Test Failed
+19:07:01.486 [main] ERROR testCases.TC_015_bdUser - Test Failed
+19:07:31.774 [main] ERROR testCases.TC_016_OpsUser - Test Failed
+19:15:20.344 [main] ERROR testCases.TC_013_RtaUser - Test Failed
+19:16:08.539 [main] ERROR testCases.TC_015_bdUser - Test Failed
+12:30:52.000 [main] ERROR testCases.TC_016_OpsUser - Test Failed

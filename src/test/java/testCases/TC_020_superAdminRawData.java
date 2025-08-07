@@ -2,6 +2,7 @@ package testCases;
 
 
 import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.Test;
 import pageObjects.superAdminRawData;
 import java.awt.*;
@@ -28,8 +29,12 @@ public class TC_020_superAdminRawData extends BaseClass{
             lp.clickCanceagain();
             logger.info("Download initiated");
 
+        } catch (SkipException e) {
+            throw e;  // Don't catch this — let TestNG treat it as skipped
         } catch (Exception e) {
-            logger.error("Test Failed", e);
+            logger.error("Test Failed");
+            logger.debug("Debug logs");
             Assert.fail("Test case failed due to exception: " + e.getMessage());
         }
-    } }
+    }
+}

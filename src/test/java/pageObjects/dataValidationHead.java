@@ -1,8 +1,6 @@
 package pageObjects;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.HasDevTools;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -10,21 +8,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.SkipException;
 
 import java.awt.*;
-import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
-import java.io.File;
-import java.io.IOException;
 import java.time.Duration;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.NoSuchElementException;
 
-import static org.testng.reporters.jq.BasePanel.C;
-
 public class dataValidationHead extends BasePage {
-        public dataValidationHead(WebDriver driver) {
+        public dataValidationHead(WebDriver driver)
+        {
                 super(driver);
         }
         @FindBy(xpath = "//input[@name='username']")
@@ -70,8 +60,10 @@ public class dataValidationHead extends BasePage {
                 generateOtp.click();
         }
 
-        public void otpinput(String otpNo) {
-                otp.sendKeys(otpNo);
+        public void enterOtp(String otp) {
+                for (int i = 0; i < otp.length(); i++) {
+                        driver.findElement(By.id("otp-" + i)).sendKeys(String.valueOf(otp.charAt(i)));
+                }
         }
 
         public void VerifyOtp() {
@@ -83,7 +75,7 @@ public class dataValidationHead extends BasePage {
                                 pwdPopUpcancelClick.click();
                                 Thread.sleep(2000); // Optional pause
                         }
-                } catch (java.util.NoSuchElementException | ElementNotInteractableException e) {
+                } catch (NoSuchElementException | ElementNotInteractableException e) {
                         System.out.println("Cancel popup not found or not clickable. Proceeding with the test.");
                 } catch (InterruptedException e) {
                         Thread.currentThread().interrupt();
@@ -112,7 +104,7 @@ public class dataValidationHead extends BasePage {
                                         System.out.println("Table did not load expected number of rows in time.");
                                 }
                         }
-                } catch (java.util.NoSuchElementException | ElementNotInteractableException e) {
+                } catch (NoSuchElementException | ElementNotInteractableException e) {
                         throw new SkipException("selectRowsPerPage not found or not interactable. Skipping this test.");
                 } catch (Exception e) {
                         throw new SkipException("Unexpected error while setting rows per page: " + e.getMessage());

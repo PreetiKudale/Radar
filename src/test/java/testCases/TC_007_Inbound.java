@@ -14,7 +14,7 @@ public class TC_007_Inbound extends BaseClass{
             inbound.setPassword(p.getProperty("Password"));
             inbound.setClickOnsignUp();
             inbound.otpGenerate();
-            inbound.otpinput(p.getProperty("OTP"));
+            inbound.enterOtp(p.getProperty("OTP"));
             inbound.VerifyOtp();
             inbound.clickCancelpopup();
             inbound.clickonworkspace();
@@ -25,10 +25,13 @@ public class TC_007_Inbound extends BaseClass{
             inbound.clickCancelpopupagain();
             logger.info("Login to Radar Application");
 
+        } catch (SkipException e) {
+            throw e;  // Don't catch this — let TestNG treat it as skipped
         } catch (Exception e) {
-            logger.error("Test Failed due to: " + e.getMessage(), e); // Log exception
-            Assert.fail("No data found for Inbound Head. Exception: " + e.getMessage());
+            logger.error("Test Failed");
+            logger.debug("Debug logs");
+            Assert.fail("Test case failed due to exception: " + e.getMessage());
         }
-        }
+    }
     }
 
