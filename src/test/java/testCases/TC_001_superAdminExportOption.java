@@ -9,13 +9,14 @@ public class TC_001_superAdminExportOption extends BaseClass {
 
     @Test
     public void verify_Account() {
+        logger.info("Started Super Admin Export Import file Test class");
         try {
             superAdminExport lp = new superAdminExport(driver);
             lp.setUserName(p.getProperty("SuperAdminuserName"));
             lp.setPassword(p.getProperty("Password"));
             lp.setClickOnsignUp();
             lp.otpGenerate();
-            lp.otpinput(p.getProperty("OTP"));
+            lp.enterOtp(p.getProperty("OTP"));
             lp.VerifyOtp();
             lp.clickCancelpopup();
             lp.clickAllFiles();

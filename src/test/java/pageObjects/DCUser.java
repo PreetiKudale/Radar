@@ -117,22 +117,22 @@ public class DCUser extends BasePage {
         WebElement exportExcel = wait.until(ExpectedConditions.elementToBeClickable(exportAsExcelOption));
         exportExcel.click();
         driver.get("chrome://downloads/");
+        Thread.sleep(5000);
         Robot robot = new Robot();
-        // Press TAB 3 times
-        for (int i = 0; i < 3; i++) {
+        Thread.sleep(2000);
+        for (int i = 0; i < 7; i++) {
             robot.keyPress(KeyEvent.VK_TAB);
             robot.keyRelease(KeyEvent.VK_TAB);
+            Thread.sleep(500);
         }
-        // Press ENTER
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.keyRelease(KeyEvent.VK_ENTER);
-        Thread.sleep(200);
+        Thread.sleep(1000);
 
-        // Press DOWN arrow
         robot.keyPress(KeyEvent.VK_DOWN);
         robot.keyRelease(KeyEvent.VK_DOWN);
+        Thread.sleep(500);
 
-        // Press ENTER again
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.keyRelease(KeyEvent.VK_ENTER);
         driver.navigate().back();

@@ -13,6 +13,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 import utility.ExtentReportManager;
 import utility.HtmlToPdfConverter;
+import utility.ScreenshotUtil;
 
 
 import java.io.FileReader;
@@ -39,7 +40,7 @@ public class BaseClass {
             if (!logDir.exists()) {
                 logDir.mkdirs();
             }
-            FileWriter fw = new FileWriter("logs/allWebsites.log", false);
+            FileWriter fw = new FileWriter("logs/RadarAutomation.log", false);
             fw.write("");
             fw.close();
             System.out.println("Log4j log file cleared.");
@@ -56,12 +57,19 @@ public class BaseClass {
     public void logResult(ITestResult result) {
         if (result.getStatus() == ITestResult.FAILURE) {
             test.fail(result.getThrowable());
+            // 👇 Capture screenshot
+            String screenshotPath = ScreenshotUtil.capture(driver, result.getName());
+            if (screenshotPath != null) {
+                test.addScreenCaptureFromPath(screenshotPath);  // For Extent report
+            }
+
         } else if (result.getStatus() == ITestResult.SUCCESS) {
             test.pass("Test Passed");
         } else {
             test.skip("Test Skipped");
         }
     }
+
     @BeforeClass
     @Parameters({"os", "Browser"})
     public void setUp(String os, String br) throws IOException {
