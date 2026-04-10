@@ -3,7 +3,7 @@
 <suite name="Radar">
     <test name="RadarFlow">
         <parameter name="os" value="Windows"/>
-        <parameter name="Browser" value="chrome"/>
+        <parameter name="Browser" value="edge"/>
         <classes>
             <!--<class name ="pageObjects.robotVPN"/>-->
             <class name="testCases.TC_019_newTeam"/>

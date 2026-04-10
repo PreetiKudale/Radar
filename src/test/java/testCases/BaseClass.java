@@ -8,14 +8,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import utility.ExtentReportManager;
 import utility.HtmlToPdfConverter;
 import utility.ScreenshotUtil;
-
-
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -25,6 +25,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 import java.util.UUID;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class BaseClass {
     public WebDriver driver;
@@ -72,51 +74,101 @@ public class BaseClass {
 
     @BeforeClass
     @Parameters({"os", "Browser"})
-    public void setUp(String os, String br) throws IOException {
-        // ✅ Initialize extent here
+    public void setUp(@Optional("Windows") String os, @Optional("chrome") String br) throws IOException {
         extent = ExtentReportManager.getInstance();
-        // Load config
+
+        // Load config file
         FileReader file = new FileReader("./src/test/resources/config.properties");
         p = new Properties();
         p.load(file);
+
         logger = LogManager.getLogger(this.getClass());
-        // Browser setup
-        switch (br.toLowerCase()) {
-            case "chrome": {
+        System.out.println("Running on OS: " + os + " | Browser: " + br);
+
+        // Normalize browser input
+        String browser = br.toLowerCase();
+        boolean isHeadless = browser.contains("headless");
+
+        switch (browser) {
+            // 🧩 Chrome / Chrome-Headless
+            case "chrome":
+            case "chrome-headless": {
+                WebDriverManager.chromedriver().setup();
                 ChromeOptions options = new ChromeOptions();
-                // Disable save password prompt
+
+                // Disable save password prompts
                 Map<String, Object> prefs = new HashMap<>();
                 prefs.put("credentials_enable_service", false);
                 prefs.put("profile.password_manager_enabled", false);
                 options.setExperimentalOption("prefs", prefs);
-                options.addArguments("--disable-save-password-bubble");
-                // Clean Chrome profile for each run
-                options.addArguments("--user-data-dir=/tmp/profile-" + UUID.randomUUID());
 
-                //  Headless mode (if needed)
-                // options.addArguments("--headless=new");
+                // Stability arguments
+                options.addArguments("--no-sandbox");
+                options.addArguments("--disable-dev-shm-usage");
+                options.addArguments("--remote-allow-origins=*");
+                options.addArguments("--disable-gpu");
+                options.addArguments("--disable-extensions");
+                options.addArguments("--disable-popup-blocking");
+                options.addArguments("--disable-notifications");
+                options.addArguments("--start-maximized");
+                options.addArguments("--user-data-dir=" + System.getProperty("java.io.tmpdir") + "/chrome-profile-" + UUID.randomUUID());
+
+                // Headless mode
+               /* if (isHeadless) {
+                    options.addArguments("--headless=new");
+                    options.addArguments("--window-size=1920,1080");
+                }*/
 
                 driver = new ChromeDriver(options);
                 break;
             }
-            case "edge": {
-                driver = new EdgeDriver();
+
+            // 🧩 Edge / Edge-Headless
+            case "edge":
+            case "edge-headless": {
+                WebDriverManager.edgedriver().setup();
+                EdgeOptions edgeOptions = new EdgeOptions();
+
+              /*  if (isHeadless) {
+                    edgeOptions.addArguments("--headless=new");
+                    edgeOptions.addArguments("--window-size=1920,1080");
+                }*/
+
+                edgeOptions.addArguments("--disable-gpu");
+                edgeOptions.addArguments("--disable-extensions");
+                edgeOptions.addArguments("--start-maximized");
+                edgeOptions.addArguments("--remote-allow-origins=*");
+
+                driver = new EdgeDriver(edgeOptions);
                 break;
             }
-            case "firefox": {
-                driver = new FirefoxDriver();
+
+            // 🧩 Firefox / Firefox-Headless
+            case "firefox":
+            case "firefox-headless": {
+                WebDriverManager.firefoxdriver().setup();
+                FirefoxOptions ffOptions = new FirefoxOptions();
+
+                if (isHeadless) {
+                    ffOptions.addArguments("--headless");
+                    ffOptions.addArguments("--width=1920");
+                    ffOptions.addArguments("--height=1080");
+                }
+
+                driver = new FirefoxDriver(ffOptions);
                 break;
             }
-            default: {
-                System.out.println("Invalid Browser");
-                return;
-            }
+
+            default:
+                throw new IllegalArgumentException("❌ Invalid browser name provided: " + br);
         }
 
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-        driver.get(p.getProperty("uatAppURL"));
         driver.manage().window().maximize();
+        driver.get(p.getProperty("TestAppURL"));
+
+        logger.info("✅ Browser launched successfully: " + br + " | URL: " + p.getProperty("TestAppURL"));
     }
     @AfterClass
     public void tearDown() {
